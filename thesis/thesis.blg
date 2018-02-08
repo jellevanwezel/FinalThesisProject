@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: frontBackmatter/dirtyTitlepage.aux
+A level-1 auxiliary file: frontBackmatter/titlepage.aux
+A level-1 auxiliary file: frontBackmatter/titleback.aux
+A level-1 auxiliary file: frontBackmatter/dedication.aux
+A level-1 auxiliary file: frontBackmatter/foreword.aux
+A level-1 auxiliary file: frontBackmatter/abstract.aux
+A level-1 auxiliary file: frontBackmatter/acknowledgments.aux
+A level-1 auxiliary file: frontBackmatter/contents.aux
+A level-1 auxiliary file: chapters/introduction.aux
+A level-1 auxiliary file: chapters/background.aux
+A level-1 auxiliary file: chapters/dataset.aux
+A level-1 auxiliary file: chapters/methods.aux
+A level-1 auxiliary file: chapters/experiments.aux
+A level-1 auxiliary file: chapters/results.aux
+A level-1 auxiliary file: chapters/discussion.aux
+A level-1 auxiliary file: chapters/conclusion.aux
+A level-1 auxiliary file: appendices/appendixA.aux
+A level-1 auxiliary file: frontBackmatter/bibliography.aux
+A level-1 auxiliary file: frontBackmatter/declaration.aux
+A level-1 auxiliary file: frontBackmatter/colophon.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: thesis-blx.bib
+Database file #2: Bibliography.bib
+Biblatex version: 3.3
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+You've used 2 entries,
+            6047 wiz_defined-function locations,
+            1157 strings with 8742 characters,
+and the built_in function-call counts, 4899 in all, are:
+= -- 257
+> -- 162
+< -- 48
++ -- 80
+- -- 48
+* -- 229
+:= -- 477
+add.period$ -- 0
+call.type$ -- 2
+change.case$ -- 1
+chr.to.int$ -- 34
+cite$ -- 2
+duplicate$ -- 415
+empty$ -- 465
+format.name$ -- 50
+if$ -- 1132
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 0
+newline$ -- 47
+num.names$ -- 71
+pop$ -- 352
+preamble$ -- 1
+purify$ -- 37
+quote$ -- 0
+skip$ -- 344
+stack$ -- 0
+substring$ -- 280
+swap$ -- 142
+text.length$ -- 39
+text.prefix$ -- 1
+top$ -- 1
+type$ -- 64
+warning$ -- 0
+while$ -- 70
+width$ -- 0
+write$ -- 44

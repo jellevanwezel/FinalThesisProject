@@ -1,0 +1,4 @@
+PWD /home/jelle/RUG/FTP/thesis/frontBackmatter
+INPUT /var/lib/texmf/web2c/luatex/lualatex.fmt
+INPUT /home/jelle/RUG/FTP/thesis/frontBackmatter/abstract.tex
+OUTPUT /home/jelle/RUG/FTP/thesis/frontBackmatter/abstract.log

@@ -1,0 +1,6 @@
+De tabel `measurepointcharacteristic` geeft de soort value die een measurement heeft.
+
+De codes die data bevatten zijn: MEP-aan, MEP-uit en I-flens met ids [1,3,4].
+De rest geeft een lege tabel.
+
+Het minimum aantal values dat er is, is: 7976 measurements.

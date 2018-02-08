@@ -1,0 +1,10 @@
+PWD /home/jelle/RUG/FTP/thesis
+INPUT /var/lib/texmf/web2c/luatex/lualatex.fmt
+INPUT /home/jelle/RUG/FTP/thesis/classicthesis-config.tex
+OUTPUT /home/jelle/RUG/FTP/thesis/classicthesis-config.log
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm

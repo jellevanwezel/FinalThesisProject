@@ -1,0 +1,128 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Training service",
+  "properties": {
+    "db": {
+      "oneOf": [
+        {
+          "$ref": "#/database/csv"
+        }
+      ]
+    },
+    "preProcessingParams": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/preprocessing/gml"
+        },
+        {
+          "$ref": "#/preprocessing/normalization"
+        },
+        {
+          "$ref": "#/stub"
+        }
+      ]
+    },
+    "trainingParams": {
+      "oneOf": [
+        {
+          "$ref": "#/training/kmeans"
+        },
+        {
+          "$ref": "#/stub"
+        }
+      ]
+    }
+  },
+  "required": [
+    "db",
+    "preProcessingParams",
+    "trainingParams"
+  ],
+  "stub": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "preprocessing": {
+    "gml": {
+      "type": "object",
+      "properties": {
+        "function_name": {
+          "type": "string",
+          "enum": [
+            "gml"
+          ]
+        },
+        "alpha": {
+          "type": "integer"
+        },
+        "learning_rate": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "function_name",
+        "alpha",
+        "learning_rate"
+      ]
+    },
+    "normalization": {
+      "type": "object",
+      "properties": {
+        "function_name": {
+          "type": "string",
+          "enum": [
+            "normalization"
+          ]
+        },
+        "axis": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "function_name"
+      ]
+    }
+  },
+  "training": {
+    "kmeans": {
+      "type": "object",
+      "properties": {
+        "function_name": {
+          "type": "string",
+          "enum": [
+            "kmeans"
+          ]
+        },
+        "learning_rate": {
+          "type": "number"
+        },
+        "k": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "function_name",
+        "learning_rate",
+        "k"
+      ]
+    }
+  },
+  "database": {
+    "csv": {
+      "type": "object",
+      "properties": {
+        "db_type": {
+          "type": "string",
+          "enum": [
+            "csv"
+          ]
+        },
+        "dataset_name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

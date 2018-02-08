@@ -1,0 +1,9 @@
+{
+  "name": "valuea_machine_learning_training",
+  "version": "0.0.1",
+  "pip": {
+    "packages": [
+      "ValueAframework>=1.0.9"
+    ]
+  }
+}

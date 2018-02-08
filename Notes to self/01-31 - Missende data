@@ -1,0 +1,11 @@
+Vanochtend gekeken naar missende data,
+
+Besloten het Amelia algorithme the proberen voor data imputation. (zie mendeley)
+
+
+Missende data in de data set per jaar gaf meer missende data punten dan dat er segmenten waren.
+Blijkbaar zijn er meer meetingen per jaar per segment.
+Dit komt waarschijnlijk doordat ik het jaar uit de hele datum van een meeting haal.
+
+Door te kijken naar de volgende jaren en de hele datum kan ik zien of er echt meerdere meetingen per jaar vericht zijn of dat ze voortijdig een meeting doen en dat dus registreren op een voorgaand jaar. Als dit zo moet ik kijken wat ik hier aan kan doen.
+

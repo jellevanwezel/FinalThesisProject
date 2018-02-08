@@ -1,0 +1,248 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Isenberg2006}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Isenberg}{I.}%
+     {Tobias}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miede}{M.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Carpendale}{C.}%
+     {Sheelagh}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{ITMACS1}
+  \strng{fullhash}{ITMACS1}
+  \field{sortinit}{I}
+  \field{booktitle}{Proceedings of the Fourth International Conference on
+  Creating, Connecting, and Collaborating through Computing
+  (C\textsuperscript{\,5} 2006)}
+  \field{isbn}{978-0-7695-2563-1}
+  \field{pages}{262\bibrangedash 269}
+  \field{title}{{A} {B}uffer {F}ramework for {S}upporting {R}esponsive
+  {I}nteraction in {I}nformation {V}isualization {I}nterfaces}
+  \field{year}{2006}
+\endentry
+
+\entry{Lampe2013c}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Lampe}{L.}%
+     {Ulrich}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kieselmann}{K.}%
+     {Markus}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miede}{M.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Z{\"o}l\-ler}{Z.-l.}%
+     {Sebastian}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steinmetz}{S.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{LU+1}
+  \strng{fullhash}{LUKMMAZlSSR1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the Second European Conference on
+  Service-Oriented and Cloud Computing (ESOCC 2013)}
+  \field{isbn}{978-3-642-40650-8}
+  \field{pages}{172\bibrangedash 179}
+  \field{title}{{A} {T}ale of {M}illis and {N}anos: {O}n the {A}ccuracy of
+  {T}ime {M}easurements in {V}irtual {M}achines}
+  \field{year}{2013}
+\endentry
+
+\entry{Lampe2013a}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Lampe}{L.}%
+     {Ulrich}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {Qiong}{Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hans}{H.}%
+     {Ronny}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miede}{M.}%
+     {Andr\'e}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steinmetz}{S.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{LU+1}
+  \strng{fullhash}{LUWQHRMASR1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the Third International Conference on Cloud
+  Computing and Services Science (CLOSER 2013)}
+  \field{isbn}{978-898-8565-52-5}
+  \field{pages}{5\bibrangedash 12}
+  \field{title}{{T}o {F}rag {O}r {T}o {B}e {F}ragged -- {A}n {E}mpirical
+  {A}ssessment of {L}atency in {C}loud {G}aming}
+  \field{year}{2013}
+\endentry
+
+\entry{Miede2010:tugboat}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Miede}{M.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{classicthesis}
+  \strng{namehash}{MA1}
+  \strng{fullhash}{MA1}
+  \field{sortinit}{M}
+  \field{issn}{0896-3207}
+  \field{number}{1}
+  \field{pages}{18\bibrangedash 20}
+  \field{title}{{T}heses and other {B}eautiful {D}ocuments with
+  \texttt{clas\-sic\-the\-sis}}
+  \field{volume}{31}
+  \field{journaltitle}{TUGboat -- The Communications of the \TeX\ Users Group}
+  \field{year}{2010}
+\endentry
+
+\entry{Miede2011}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Miede}{M.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {\c{S}im\c{s}ek}{c.}%
+     {G\"{o}khan}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schulte}{S.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Abawi}{A.}%
+     {Daniel~F.}{D.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eckert}{E.}%
+     {Julian}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steinmetz}{S.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MA+1}
+  \strng{fullhash}{MAcGSSADFEJSR1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the Tenth International Conference
+  Wirtschaftsinformatik (WI 2011)}
+  \field{isbn}{978-1-4467-9236-0}
+  \field{pages}{1083\bibrangedash 1092}
+  \field{title}{{R}evealing {B}usiness {R}elationships -- {E}avesdropping
+  {C}ross-organizational {C}ollaboration in the {I}nternet of {S}ervices}
+  \field{volume}{2}
+  \field{year}{2011}
+\endentry
+
+\entry{Tsai2012}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Tsai}{T.}%
+     {Hsin-Yi}{H.-Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Siebenhaar}{S.}%
+     {Melanie}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miede}{M.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Huang}{H.}%
+     {Yu-Lun}{Y.-L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Steinmetz}{S.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{THY+1}
+  \strng{fullhash}{THYSMMAHYLSR1}
+  \field{sortinit}{T}
+  \field{issn}{1520-9202}
+  \field{number}{1}
+  \field{pages}{32\bibrangedash 37}
+  \field{title}{{T}hreat as a {S}ervice? {V}irtualization's {I}mpact on {C}loud
+  {S}ecurity}
+  \field{volume}{14}
+  \field{journaltitle}{IEEE IT Professional}
+  \field{year}{2012}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

@@ -1,0 +1,47 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{knuth:1974}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Knuth}{K.}%
+     {Donald~E.}{D.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM Press}%
+  }
+  \strng{namehash}{KDE1}
+  \strng{fullhash}{KDE1}
+  \field{sortinit}{K}
+  \field{number}{12}
+  \field{pages}{667\bibrangedash 673}
+  \field{title}{{C}omputer {P}rogramming as an {A}rt}
+  \field{volume}{17}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{Communications of the ACM}
+  \field{year}{1974}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

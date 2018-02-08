@@ -1,0 +1,18 @@
+Data extracted with:
+==================================================
+SELECT DISTINCT (a.measurepoint_id) , c.amount
+FROM kb.recording a JOIN
+  (
+    SELECT
+      rc.measurepoint_id,
+      COUNT(*) AS amount
+    FROM kb.recording rc
+    GROUP BY rc.measurepoint_id
+    ) c ON c.measurepoint_id = a.measurepoint_id
+==================================================
+
+From the `kb' dataset.
+
+It shows how many recordings there have been done for each measuring point.
+
+The figure shows the amount of cumulative measurement points per recording amount.

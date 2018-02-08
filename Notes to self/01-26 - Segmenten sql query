@@ -1,0 +1,38 @@
+**/
+
+Gives the measurements (voltage), the year, and the material type for a pipesegment.
+The measurmentpoint is the out point of the pipe segment
+
+On the original KB dataset
+
+/**
+
+SELECT
+  m.id,
+  m.value,
+  r.measurepoint_id,
+  EXTRACT(year from r.date),
+  ps.material_type_id
+FROM kb.measurement m
+JOIN (
+  SELECT recording.date, recording.id, recording.measurepoint_id
+  FROM kb.recording recording
+) r ON  m.recording_id=r.id
+JOIN (
+  SELECT mpoint.code_id, mpoint.id
+  FROM kb.measurepoint mpoint
+) mp ON r.measurepoint_id=mp.id
+JOIN (
+  SELECT mpcode.code, mpcode.id
+  FROM kb.measurepointcode mpcode
+) mpc ON mp.code_id=mpc.id
+JOIN (
+  SELECT psegment.material_type_id, psegment.id, psmpc.code
+  FROM kb.pipesegment psegment
+  JOIN(
+      SELECT psmpcode.code, psmpcode.id
+      FROM kb.measurepointcode psmpcode
+  )psmpc ON psegment.measurepoint_out = psmpc.id
+) ps ON mpc.code LIKE ps.code
+WHERE
+  m.characteristic_id=1
