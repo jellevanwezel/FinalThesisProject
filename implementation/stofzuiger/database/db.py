@@ -1,16 +1,22 @@
 import psycopg2 as pg
 import pandas as pd
+import os
+import json
 
-class db:
 
-    username='valuea'
-    password='valuea'
-    dbname='valuea'
-    host='localhost'
+class DB:
+    script_dir = os.path.dirname(__file__)
 
     def __init__(self):
-        self.connection = None
+        self.load_config()
+        self.connect()
 
+    def load_config(self):
+        conf = json.load(open(os.path.join(self.script_dir, 'config.json')))
+        self.username = conf['username']
+        self.password = conf['password']
+        self.dbname = conf['dbname']
+        self.host = conf['host']
 
     def connect(self):
         try:
@@ -18,58 +24,46 @@ class db:
         except pg.DatabaseError as e:
             print("\nAn OperationalError occurred. Error number {0}: {1}.".format(e.args[0], e.args[1]))
 
-    def do_query(self, query):
+    def getQuery(self, file_name):
+        """
+        Opens the query file and returns it
+        :param file_name: file name in ./queries
+        :return: The sql file
+        :rtype string:
+        """
+        fd = open(os.path.join(self.script_dir, 'queries', file_name + '.sql'), 'r')
+        sqlFile = fd.read()
+        fd.close()
+        return sqlFile
 
-        df = pd.DataFrame()
-        for chunk in pd.read_sql(query, con=self.connection, chunksize=5000):
+    def do_query(self, query, params=None):
+        """
+        Excecutes the query and returns a DataFrame
+        :param query: The query that should be excecuted
+        :param params: The variables that should be inserted
+        :return:The query result
+        :rtype pandas.DataFrame:
+        """
+        df = pd.DataFrame()  # type: pd.DataFrame
+        for chunk in pd.read_sql(query, params=params, con=self.connection, chunksize=5000):
             df = df.append(chunk)
-
         return df
 
-
     def get_kb_roots(self):
-        return self.do_query((
-                    "SELECT pip.* "
-                    "FROM kb.measurepoint mp "
-                    "JOIN kb.measurepointcode mpc "
-                    "ON mp.code_id = mpc.id "
-                    "JOIN kb.pipesegment pip "
-                    "ON mpc.id = pip.measurepoint_in "
-                    "WHERE mp.valid_to > now() AND mp.area_id IS NOT NULL"
-         ))
+        """
+        Gets the roots of the kb areas
+        :return: The kb root measurepoint id's
+        :rtype pandas.DataFrame:
+        """
+        query = self.getQuery('kb_roots')
+        return self.do_query(query)
 
-    def get_kb_measurements(self,root_id):
-        return self.do_query((
-            "WITH RECURSIVE search_graph(id, parent, depth, root) AS ( "
-                "SELECT pip.id, pip.parent_id, 1, pip.id "
-                "FROM kb.measurepoint mp "
-                "JOIN kb.measurepointcode mpc "
-                "ON mp.code_id = mpc.id "
-                "JOIN kb.pipesegment pip "
-                "ON mpc.id = pip.measurepoint_in "
-                "WHERE mp.valid_to > now() AND mp.area_id IS NOT NULL AND pip.id = " + str(root_id) + " "
-                "UNION ALL "
-                "SELECT pipc.id, pipc.parent_id, search_graph.depth + 1, search_graph.root "
-                "FROM kb.pipesegment pipc, search_graph "
-                "WHERE pipc.parent_id = search_graph.id ) "
-            "SELECT "
-                "mpc.id as measurepoint_id, "
-                "rec.date, "
-                "mes.id as measurement_id, "
-                "mes.characteristic_id, "
-                "mes.value, "
-                "mes.comments "
-            "FROM search_graph "
-            "JOIN kb.pipesegment pip "
-            "ON pip.id = search_graph.id "
-            "JOIN kb.measurepointcode mpc "
-            "ON pip.measurepoint_in = mpc.id "
-            "JOIN kb.measurepoint mp "
-            "ON mpc.id = mp.code_id "
-            "JOIN kb.recording rec "
-            "ON mp.id = rec.measurepoint_id "
-            "JOIN kb.measurement mes "
-            "ON rec.id = mes.recording_id "
-            "WHERE mp.valid_to > now() AND (mes.characteristic_id = 3) "
-        ))
-
+    def get_kb_measurements(self, root_id):
+        """
+        Gets all the measurements from a tree with given root
+        :param root_id: int with the start node of the tree
+        :return: A dataframe with the measurments of this tree
+        :rtype pandas.DataFrame:
+        """
+        query = self.getQuery('kb_measurements')
+        return self.do_query(query, {"root_id": root_id})
