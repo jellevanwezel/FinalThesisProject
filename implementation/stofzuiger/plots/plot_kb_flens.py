@@ -3,7 +3,6 @@ from matplotlib.pyplot import figure, plot, show,scatter,clf,title
 from database.db import DB
 import numpy as np
 from sklearn import linear_model
-import scipy
 
 rootNumber = 0
 
@@ -42,43 +41,24 @@ def regression(x,y):
     reg.fit(x, y)
     return reg.predict(x)
 
-def fit_sin(tt, yy):
-    tt = np.array(tt)
-    yy = np.array(yy)
-    ff = np.fft.fftfreq(len(tt), (tt[1]-tt[0]))   # assume uniform spacing
-    Fyy = abs(np.fft.fft(yy))
-    guess_freq = abs(ff[np.argmax(Fyy[1:])+1])   # excluding the zero frequency "peak", which is related to offset
-    guess_amp = np.std(yy) * 2.**0.5
-    guess_offset = np.mean(yy)
-    guess = np.array([guess_amp, 2.*np.pi*guess_freq, 0., guess_offset])
-    def sinfunc(t, A, w, p, c):  return A * np.sin(w*t + p) + c
-    popt, pcov = scipy.optimize.curve_fit(sinfunc, tt, yy, p0=guess)
-    A, w, p, c = popt
-    f = w/(2.*np.pi)
-    fitfunc = lambda t: A * np.sin(w*t + p) + c
-    return {"amp": A, "omega": w, "phase": p, "offset": c, "freq": f, "period": 1./f, "fitfunc": fitfunc, "maxcov": np.max(pcov), "rawres": (guess,popt,pcov)}
-
 def mean_var(x):
     return (np.mean(x),np.std(x))
 
 def show_plot(root_id,area_name):
     clf()
-    mdf = stof.get_kb_measurements(root_id)
+    mdf = stof.get_kb_flens(root_id)
     mdf['date'] = mdf['date'].apply(lambda x: float(x.to_pydatetime().year) + float(x.to_pydatetime().month) / 13)
-    #mdf['date'] = mdf['date'].apply(lambda x: x - np.min(mdf['date']))
+    mdf = mdf[mdf.value != 0]
     (avg,std) = mean_var(mdf['value'])
     mdf = mdf[mdf.value < avg + 2 * std]
     mdf = mdf[mdf.value > avg - 2 * std]
     pred = regression(mdf[['date']], mdf['value'])
-    #pred_sin = fit_sin(mdf['date'], mdf['value'])
     scatter(mdf['date'], mdf['value'])
-    #plot([np.min(mdf['date']),np.max(mdf['date'])],[avg,avg],'g--')
-    #x = np.linspace(np.min(mdf['date']),np.max(mdf['date']),100)
-    #plot(x,pred_sin['fitfunc'](x))
-    #plot([np.min(mdf['date']), np.max(mdf['date'])], [avg - 2 * std, avg - 2 * std],'r:')
-    #plot([np.min(mdf['date']), np.max(mdf['date'])], [avg + 2 * std, avg + 2 * std],'r:')
+    plot([np.min(mdf['date']),np.max(mdf['date'])],[avg,avg],'g--')
+    plot([np.min(mdf['date']), np.max(mdf['date'])], [avg - 2 * std, avg - 2 * std],'r:')
+    plot([np.min(mdf['date']), np.max(mdf['date'])], [avg + 2 * std, avg + 2 * std],'r:')
     plot(mdf['date'],pred)
-    title(area_name + " - measurements")
+    title(area_name)
     show()
 
 NavigationToolbar2.forward = next_button

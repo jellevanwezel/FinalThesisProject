@@ -1,5 +1,5 @@
-WITH RECURSIVE search_graph(id, parent, depth, root) AS (
-  SELECT pip.id, pip.parent_id, 1, pip.id
+WITH RECURSIVE search_graph(id, parent, depth, root, root_geom) AS (
+  SELECT pip.id, pip.parent_id, 1, pip.id, mp.geom
   FROM kb.measurepoint mp
   JOIN kb.measurepointcode mpc
   ON mp.code_id = mpc.id
@@ -7,16 +7,12 @@ WITH RECURSIVE search_graph(id, parent, depth, root) AS (
   ON mpc.id = pip.measurepoint_in
   WHERE mp.valid_to > now() AND mp.area_id IS NOT NULL AND pip.id = %(root_id)s
   UNION ALL
-  SELECT pipc.id, pipc.parent_id, search_graph.depth + 1, search_graph.root
+  SELECT pipc.id, pipc.parent_id, search_graph.depth + 1, search_graph.root, search_graph.root_geom
   FROM kb.pipesegment pipc, search_graph
   WHERE pipc.parent_id = search_graph.id )
 SELECT
-  mpc.id as measurepoint_id,
-  rec.date,
-  mes.id as measurement_id,
-  mes.characteristic_id,
-  mes.value - mes2.value as difference,
-  mes.comments
+  st_distance_sphere(mp.geom,search_graph.root_geom) as distance,
+  mes.value
 FROM search_graph
   JOIN kb.pipesegment pip
   ON pip.id = search_graph.id
@@ -28,6 +24,4 @@ FROM search_graph
   ON mp.id = rec.measurepoint_id
   JOIN kb.measurement mes
   ON rec.id = mes.recording_id
-  JOIN kb.measurement mes2
-  ON rec.id = mes2.recording_id AND mes2.characteristic_id = 3
 WHERE mp.valid_to > now() AND (mes.characteristic_id = 1)

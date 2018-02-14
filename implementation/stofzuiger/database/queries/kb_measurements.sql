@@ -28,4 +28,4 @@ FROM search_graph
   ON mp.id = rec.measurepoint_id
   JOIN kb.measurement mes
   ON rec.id = mes.recording_id
-WHERE mp.valid_to > now() AND (mes.characteristic_id = 3)
+WHERE mp.valid_to > now() AND (mes.characteristic_id = 1)
