@@ -14,15 +14,17 @@ previous = NavigationToolbar2.back
 
 def next_button(self, *args, **kwargs):
     global rootNumber
-    if rootNumber != roots_df.shape[0] - 1:
-        rootNumber = rootNumber + 1
+    if rootNumber == roots_df.shape[0] - 1:
+        return
+    rootNumber = rootNumber + 1
     show_plot(get_root_id(rootNumber), get_area_name(rootNumber))
     forward(self, *args, **kwargs)
 
 def back_button(self, *args, **kwargs):
     global rootNumber
-    if rootNumber != 0:
-        rootNumber = rootNumber - 1
+    if rootNumber == 0:
+        return
+    rootNumber = rootNumber - 1
     show_plot(get_root_id(rootNumber), get_area_name(rootNumber))
     previous(self, *args, **kwargs)
 
@@ -46,13 +48,15 @@ def mean_var(x):
 
 def show_plot(root_id,area_name):
     clf()
-    mdf = stof.get_kb_measurements(root_id)
+    mdf = stof.get_kb_differences(root_id)
+    if mdf.shape[0] == 0:
+        return
     mdf['date'] = mdf['date'].apply(lambda x: float(x.to_pydatetime().year) + float(x.to_pydatetime().month) / 13)
-    (avg,std) = mean_var(mdf['value'])
-    mdf = mdf[mdf.value < avg + 2 * std]
-    mdf = mdf[mdf.value > avg - 2 * std]
-    pred = regression(mdf[['date']], mdf['value'])
-    scatter(mdf['date'], mdf['value'])
+    (avg,std) = mean_var(mdf['diff'])
+    mdf = mdf[mdf.diff < avg + 2 * std]
+    mdf = mdf[mdf.diff > avg - 2 * std]
+    pred = regression(mdf[['date']], mdf['diff'])
+    scatter(mdf['date'], mdf['diff'])
     plot([np.min(mdf['date']),np.max(mdf['date'])],[avg,avg],'g--')
     plot([np.min(mdf['date']), np.max(mdf['date'])], [avg - 2 * std, avg - 2 * std],'r:')
     plot([np.min(mdf['date']), np.max(mdf['date'])], [avg + 2 * std, avg + 2 * std],'r:')

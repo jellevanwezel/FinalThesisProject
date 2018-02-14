@@ -67,3 +67,13 @@ class DB:
         """
         query = self.getQuery('kb_measurements')
         return self.do_query(query, {"root_id": root_id})
+
+    def get_kb_differences(self, root_id):
+        """
+        Gets all the measurements from a tree with given root
+        :param root_id: int with the start node of the tree
+        :return: A dataframe with the measurments of this tree
+        :rtype pandas.DataFrame:
+        """
+        query = self.getQuery('kb_differences')
+        return self.do_query(query, {"root_id": root_id})

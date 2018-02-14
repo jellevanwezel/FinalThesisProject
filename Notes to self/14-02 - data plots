@@ -1,0 +1,13 @@
+Wat ik zie in de plots is een sinus beweging over de jaren.
+Waar komt deze sinus beweging vandaan.
+
+Verder zie ik van de lineaire regressie op alle data dat de meeste lijnen naar beneden gaan. Echter soms gaat er een omhoog... Misschien classificatie hierop doen met LVQ?
+
+Ik heb de ouliers nu bepaald door (2 * std) over de hele data. De metingen zijn echter per jaar en er zijn duidelijk 'groepen' zichtbaar in een bepaald jaar. Het is misschien beter om de mean en std van deze groepen te bepalen en daar de outlier detection op te doen. Het probleem hiermee is dat de maanden niet altijd hetzelfde zijn.
+
+De sinus beweging kan misschien verklaart worden door het voltage verschil van de grond zelf. Echter er zijn weinig metingen van de grond zelf.
+Vragen:
+	- Sinus beweging aan Henk.
+	- Is het standaard dat die lijn omhoog gaat of naar beneden. (staat waarschijnlijk in het kb-boekje)
+	- Het lijkt alsof er 1 meeting van de grond is gedaan per jaar per kb gebied 
+

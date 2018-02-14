@@ -15,7 +15,7 @@ SELECT
   rec.date,
   mes.id as measurement_id,
   mes.characteristic_id,
-  mes.value,
+  mes.value - mes2.value as diff,
   mes.comments
 FROM search_graph
   JOIN kb.pipesegment pip
@@ -28,4 +28,6 @@ FROM search_graph
   ON mp.id = rec.measurepoint_id
   JOIN kb.measurement mes
   ON rec.id = mes.recording_id
+  JOIN kb.measurement mes2
+  ON rec.id = mes2.recording_id AND mes2.characteristic_id = 2
 WHERE mp.valid_to > now() AND (mes.characteristic_id = 3)
