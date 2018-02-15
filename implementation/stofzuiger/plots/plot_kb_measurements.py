@@ -21,6 +21,7 @@ def next_button(self, *args, **kwargs):
     forward(self, *args, **kwargs)
 
 def back_button(self, *args, **kwargs):
+    print self
     global rootNumber
     if rootNumber != 0:
         rootNumber = rootNumber - 1
