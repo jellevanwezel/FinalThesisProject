@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Goals KB FTP}
+\author{Jelle van Wezel}
+
+\maketitle
+
+\section{Goal 1, Pipeline durability prediction}
+
+The first goal of the project is to predict in some way the durability of the current gas pipes hold by Cogas.
+
+With the data we have the following techniques can be applied.
+
+\subsection{Regression}
+
+The following regression techniques were selected.
+
+\begin{itemize}
+\item Linear Regression
+\item Sin Regression
+\item Non-linear Regression
+\item Auto Regression
+\end{itemize}
+
+\subsection{Learning Vector Quantization}
+
+With the help of a sliding window we can use LVQ to predict a future trend.
+
+\begin{itemize}
+\item LVQ with the Linear regression as label
+\item LVQ with binning as label
+\end{itemize}
+
+Both LVQ methods can be done on: the whole dataset, measuring points (mps), and cathodic protection area (cpa).
+
+\subsection{Feature Extraction}
+
+\begin{itemize}
+\item PCA
+\item Suvrel
+\item GML
+\item Covariance Matrix
+\item RGLVQ and GMLVQ, look at the matrix / vector
+\end{itemize}
+
+\section{Goal 2, Suggesting new anode location}
+
+The second goal is the suggest a location for a new anode such that the worst parts of a existing cathodic protection (cp) area can be better protected.
+
+\subsection{Questions}
+
+\begin{itemize}
+\item Is this even possible?
+\item Are there now cp areas with multiple anodes?
+\item How would this be implemented? (create 2 new cp areas?)
+\end{itemize}
+
+\subsection{Clustering}
+
+A method of finding a location could be to cluster the mps and find the clusters with the lowest voltage readings/trends, these areas could then be suitable for a new anode.
+
+\begin{itemize}
+\item K-means
+\item Neural Gas
+\end{itemize}
+
+\end{document}
