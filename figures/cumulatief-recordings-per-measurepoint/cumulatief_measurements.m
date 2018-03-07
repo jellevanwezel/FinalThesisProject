@@ -19,15 +19,15 @@ box(axes1,'on');
 hold(axes1,'on');
 
 % Create plot
-plot(cumulatiefData,'DisplayName','Cumulatief amount of measure points','LineWidth',5);
+plot(cumulatiefData,'DisplayName','Measuring Points','LineWidth',5);
 
 % Create xlabel
-xlabel('Recordings per measure point');
+xlabel('Recordings per Measuring Point');
 
 % Create ylabel
 ylabel('Cumulatief amount of measure points');
 
-set(gca,'TickLabelInterpreter', 'latex');
+set(gca,'TickLabelInterpreter', 'latex','fontsize',20);
 
 saveas(gca,[path,imageName,'.pdf']);
 system(['pdfcrop ',path,imageName,'.pdf ',path,imageName,'.pdf']);

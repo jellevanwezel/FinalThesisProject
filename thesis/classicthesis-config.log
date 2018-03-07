@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2018.2.1)  1 FEB 2018 10:45
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2018.2.1)  1 MAR 2018 16:41
  restricted \write18 enabled.
 **classicthesis-config.tex
 (/home/jelle/RUG/FTP/thesis/classicthesis-config.tex
@@ -452,8 +452,8 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-\myTitle ->A Classic Thesis Style\xspace 
-                                         
+\myTitle ->Cathodic Protection Prediction\xspace 
+                                                 
 l.194   pdftitle={\myTitle
                         },%
 The control sequence at the end of the top line
@@ -535,7 +535,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 186--201
 
 
 Overfull \hbox (10.00002pt too wide) in paragraph at lines 186--201
-Style,pdfauthor=[]
+Prediction,pdfauthor=[]
  []
 
 
@@ -550,6 +550,18 @@ l.255 \usepackage{
 \usepackage may only appear in the document preamble, i.e.,
 between \documentclass and \begin{document}.
 
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 \usepackage{
+                wallpaper}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
 )
 ! Emergency stop.
 <*> classicthesis-config.tex
@@ -559,12 +571,12 @@ between \documentclass and \begin{document}.
 
 
 Here is how much of LuaTeX's memory you used:
- 108 strings out of 495004
- 100000,89155 words of node,token memory allocated 5736 words of node memory still in use:
-   35 hlist, 1 vlist, 12 disc, 91 glue, 12 kern, 19 penalty, 753 glyph, 52 glue_
+ 111 strings out of 495004
+ 100000,89155 words of node,token memory allocated 5782 words of node memory still in use:
+   35 hlist, 1 vlist, 12 disc, 90 glue, 12 kern, 19 penalty, 762 glyph, 51 glue_
 spec, 3 local_par, 1 dir nodes
-   avail lists: 2:16,3:1,4:11,5:5,6:1,7:28,10:15
- 3777 multiletter control sequences out of 65536+600000
+   avail lists: 2:16,3:1,4:10,5:5,6:1,7:27,10:14
+ 3780 multiletter control sequences out of 65536+600000
  18 fonts using 719823 bytes
  18i,6n,16p,160b,140s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
