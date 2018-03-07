@@ -59,6 +59,10 @@ class PolyInterpolation:
         plt.plot(self.t, self.y)
         plt.show()
 
+    def get_t_hat(self,precision=3):
+        p = float(10. ** -precision)
+        return np.arange(-1.0, 1.0 + p,p)
+
     def r_squared(self,coefs,precision=3):
         i = 0
         yHat = self.get_y_hat(coefs,precision)

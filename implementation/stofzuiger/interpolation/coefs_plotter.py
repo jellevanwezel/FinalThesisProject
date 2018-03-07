@@ -13,29 +13,60 @@ class CoefsPlotter:
         self.xval = xval
         self.yval = yval
         self.rootNumber = 0
+        self.mpNumber = 0
         self.stof = DB()
         self.roots_df = self.stof.get_kb_roots()
         root_id = self.get_root_id(self.rootNumber)
         self.area_df = self.stof.get_kb_oodi_dd(root_id)
+        self.polyInt = PolyInterpolation(precision=3)
+        self.area_df = self.stof.get_kb_oodi_dd(root_id)
+        self.meas_df = self.area_df[self.area_df.measurepoint_id == self.get_mp_ids()[0]]
+        self.meas_df = self.prepare_meas_df(self.meas_df)
         NavigationToolbar2.forward = self.next_button_area
         NavigationToolbar2.back = self.back_button_area
-        NavigationToolbar2.home = self.home_button
+        NavigationToolbar2.forward_mp = self.next_button_mp
+        NavigationToolbar2.back_mp = self.back_button_mp
+        NavigationToolbar2.toolitems = NavigationToolbar2.toolitems + (
+            ('Back mp', 'Back to  previous mp', 'back', 'back_mp'),
+            ('Forward mp', 'Forward to next mp', 'forward', 'forward_mp')
+        )
+        plt.figure()
+        plt.show()
 
     def next_button_area(self, *args, **kwargs):
         if self.rootNumber != self.roots_df.shape[0] - 1:
             self.rootNumber = self.rootNumber + 1
             root_id = self.get_root_id(self.rootNumber)
             self.area_df = self.stof.get_kb_oodi_dd(root_id)
-        #plt.clf()
+            self.meas_df = self.area_df[self.area_df.measurepoint_id == self.get_mp_ids()[0]]
+            self.meas_df = self.prepare_meas_df(self.meas_df)
+            self.mpNumber = 0
+        self.show_plot()
 
     def back_button_area(self, *args, **kwargs):
         if self.rootNumber != 0:
             self.rootNumber = self.rootNumber - 1
             root_id = self.get_root_id(self.rootNumber)
             self.area_df = self.stof.get_kb_oodi_dd(root_id)
-        #plt.clf()
+            self.meas_df = self.area_df[self.area_df.measurepoint_id == self.get_mp_ids()[0]]
+            self.meas_df = self.prepare_meas_df(self.meas_df)
+            self.mpNumber = 0
+        self.show_plot()
 
-    def home_button(self, *args, **kwargs):
+    def next_button_mp(self, *args, **kwargs):
+        if self.mpNumber != self.get_mp_ids().shape[0] - 1:
+            self.mpNumber = self.mpNumber + 1
+            mpid = self.get_mp_ids()[self.mpNumber]
+            self.meas_df = self.area_df[self.area_df.measurepoint_id == mpid]
+            self.meas_df = self.prepare_meas_df(self.meas_df)
+        self.show_plot()
+
+    def back_button_mp(self, *args, **kwargs):
+        if self.mpNumber != 0:
+            self.mpNumber = self.mpNumber - 1
+            mpid = self.get_mp_ids()[self.mpNumber]
+            self.meas_df = self.area_df[self.area_df.measurepoint_id == mpid]
+            self.meas_df = self.prepare_meas_df(self.meas_df)
         self.show_plot()
 
     def get_root_id(self,index):
@@ -49,39 +80,46 @@ class CoefsPlotter:
         root = self.roots_df.iloc[index]
         return root['area_name']
 
+    def get_number_of_mps(self):
+        return self.get_mp_ids().shape[0]
+
+    def get_number_of_areas(self):
+        return self.roots_df.shape[0]
+
+    def prepare_meas_df(self,meas_df):
+        meas_df = meas_df[[self.xval, self.yval]]
+        meas_df = meas_df.dropna()
+        meas_df.columns = ['x', 'y']
+        if (meas_df.shape[0] <= 2):
+            return None
+        (m, s) = stats.mean_std(meas_df['y'])
+        meas_df = meas_df[meas_df.y < m + 2 * s]
+        meas_df = meas_df[meas_df.y > m - 2 * s]
+        if (meas_df.shape[0] <= 2):
+            return None
+        return meas_df
+
 
     def show_plot(self):
-        #plt.clf()
+        plt.clf()
+        if self.meas_df is None:
+            print 'Not enough points'
+            return
         area_name = self.get_area_name(self.rootNumber)
-        max_n = 25
-        mpLen = len(self.get_mp_ids())
-        e = np.zeros([mpLen,max_n])
-        polyInt = PolyInterpolation(precision=2)
-        for idx, mpid in enumerate(self.get_mp_ids()):
-            print str(idx) + "/" + str(mpLen)
-            meas_df = self.area_df[self.area_df.measurepoint_id == mpid]
-            meas_df = meas_df[[self.xval, 'mep_uit']]
-            meas_df = meas_df.dropna()
-            meas_df.columns = ['x', 'y']
-            if(meas_df.shape[0] <= 1):
-                continue
-            (m,s) = stats.mean_std(meas_df['y'])
-            meas_df = meas_df[meas_df.y < m + 2 * s]
-            meas_df = meas_df[meas_df.y > m - 2 * s]
-            polyInt.set_t(meas_df['x'])
-            polyInt.set_y(meas_df['y'])
+        self.polyInt.set_t(np.array(self.meas_df['x']))
+        self.polyInt.set_y(np.array(self.meas_df['y']))
+        coefs = self.polyInt.find_coefs(10)
+        yHat = self.polyInt.get_y_hat(coefs,precision=3)
+        tHat = self.polyInt.get_t_hat(precision=3)
+        t = self.polyInt.t
+        y = self.polyInt.y
+        t_sorted, y_sorted = zip(*sorted(zip(t, y), key=lambda x: x[0]))
+        plt.plot(t_sorted,y_sorted)
+        plt.plot(tHat,yHat)
+        area_title = area_name + ": " + str(self.rootNumber + 1) + "/" + str(self.get_number_of_areas())
+        mp_title = "mp: " + str(self.mpNumber + 1) + "/" + str(self.get_number_of_mps())
+        plt.title(area_title + " " + mp_title)
+        plt.draw()
 
-            coefs = polyInt.find_coefs(max_n)
-            for n in range(0,max_n):
-                e[idx, n] = polyInt.avg_dist_reg(coefs[0:n],precision=2)
-            e[idx,:]  = (e[idx,:] - np.min(e[idx,:])) / (np.max(e[idx,:]) - np.min(e[idx,:]))
-            #plt.plot(range(0, max_n), e[idx,:])
-        plt.plot(range(0, max_n), np.mean(e,axis=0))
-        plt.title(area_name)
-        plt.show()
-
-
-
-
-plotter = KB_plotter_avg_n()
-plotter.save_errors_LOOCV()
+plotter = CoefsPlotter()
+plotter.show_plot()
