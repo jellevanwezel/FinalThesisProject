@@ -59,6 +59,7 @@ Figure [REF] shows a fast drop in measurement points after the 20 measurements m
 \label{sec:dataset:interpolation}
 The method we proposed to use to predict the voltages of the pipelines with LVQ [REF] depends on the data being consistently spaced in time. 
 
+Before the interpolation method was applied the data was checked for outliers by taking the mean and two times the standart deveation. Then removing the data points that did not fall in the range of $x > 2 \times \sigma - \mu$ and $x < 2 \times \sigma + \mu$.
 
 \begin{figure}[!htb]
 \centering

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.1)  6 MAR 2018 12:16
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.1)  7 MAR 2018 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3382,18 +3382,24 @@ Package microtype Info: Character `ﬆ' is missing
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 33
 .
- (/home/jelle/RUG/FTP/thesis/thesis.lof)
+ (/home/jelle/RUG/FTP/thesis/thesis.lof
+Overfull \hbox (17.16301pt too wide) in paragraph at lines 31--31
+ \EU1/TeXGyrePagella(0)/m/n/10.95 cients used for the polynomial interpolation.
+ []  
+ []
+
+)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
 Package tocbasic Info: character protrusion at lot deactivated on input line 44
 .
-
-(/home/jelle/RUG/FTP/thesis/thesis.lot)
+ (/home/jelle/RUG/FTP/thesis/thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- (/home/jelle/RUG/FTP/thesis/thesis.lol)
+
+(/home/jelle/RUG/FTP/thesis/thesis.lol)
 \tf@lol=\write9
 \openout9 = `thesis.lol'.
 
@@ -3402,7 +3408,8 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 44
 ]
 \openout2 = `chapters/introduction.aux'.
 
- (/home/jelle/RUG/FTP/thesis/chapters/introduction.tex
+
+(/home/jelle/RUG/FTP/thesis/chapters/introduction.tex
 Chapter 1.
 
 Overfull \hbox (8.03629pt too wide) in paragraph at lines 11--13
@@ -3638,7 +3645,7 @@ le (type QTm)
  <use  "./gfx/chapters/data/cumulatief-recordings-per-measurepoint.pdf" >
 File: ./gfx/chapters/data/Average-LOOCV-Error.pdf Graphic file (type QTm)
 
-<use  "./gfx/chapters/data/Average-LOOCV-Error.pdf" >) [7] [8]
+<use  "./gfx/chapters/data/Average-LOOCV-Error.pdf" > [7]) [8]
 \openout2 = `chapters/methods.aux'.
 
 
@@ -3955,7 +3962,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  40674 strings out of 495564
  742610 string characters out of 6186599
- 1076859 words of memory out of 5000000
+ 1077870 words of memory out of 5000000
  43318 multiletter control sequences out of 15000+600000
  9020 words of font info for 81 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

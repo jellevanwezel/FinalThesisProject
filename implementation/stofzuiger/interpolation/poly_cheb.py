@@ -83,20 +83,3 @@ class PolyInterpolation:
             i += 1
         #return np.sqrt(np.sum(np.power((y-yHat),2))) / (2 * (10 ** precision) + 1) + (l * len(coefs))
         return np.sum(np.abs(y - yHat))
-
-# t = np.array([7.307692,8.923077,9.923077,10.923077,11.923077,13,14,15,16,16.923077,18,19,21,22,23.384615,24.384615,25.461538,28.461538])
-# y = np.array([-994,-1004,-988,-1072,-928,-572,-1164,-1226,-740,-1080,-1130,-1040,-1080,-1050,-1025,-1080,-960,-1050])
-# polyInt = PolyInterpolation(t,y)
-# coefs = polyInt.find_coefs(n=25)
-# print polyInt.r_squared(coefs)
-# polyInt.plot_y_hat(coefs)
-
-
-# polyInt = PolyInterpolation(t,y)
-# rs = np.empty([51])
-# for n in range(0,51):
-#     coefs = polyInt.find_coefs(n)
-#     rs[n] = polyInt.avg_dist_reg(coefs,0.1)
-#     print "n:" + str(n) + " dist:" + str(rs[n])
-# plt.plot(range(0,51),rs)
-# plt.show()

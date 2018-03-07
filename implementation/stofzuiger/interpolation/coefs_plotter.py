@@ -3,9 +3,11 @@ from database.db import DB
 import numpy as np
 import matplotlib.pyplot as plt
 
-from interpolation.poly_func_class import PolyInterpolation
+from interpolation.poly_cheb import PolyInterpolation
 from statistics import stats
 
+
+# todo: Refactor this to use the Model
 
 class CoefsPlotter:
 
