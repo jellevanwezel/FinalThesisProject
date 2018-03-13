@@ -37,6 +37,5 @@ class CoefsFinder:
         if omitted: logString = logString + " - omitted, has too little measurements"
         print logString
 
-
 cf = CoefsFinder()
 cf.find_coefs(11)

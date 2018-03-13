@@ -111,8 +111,8 @@ class CoefsPlotter:
         self.polyInt.set_t(np.array(self.meas_df['x']))
         self.polyInt.set_y(np.array(self.meas_df['y']))
         coefs = self.polyInt.find_coefs(10)
-        yHat = self.polyInt.get_y_hat(coefs,precision=3)
-        tHat = self.polyInt.get_t_hat(precision=3)
+        yHat = self.polyInt.get_y_hat_for_range(coefs,np.arange(-1,1,0.04))
+        tHat = np.arange(-1,1,0.04)
         t = self.polyInt.t
         y = self.polyInt.y
         t_sorted, y_sorted = zip(*sorted(zip(t, y), key=lambda x: x[0]))
