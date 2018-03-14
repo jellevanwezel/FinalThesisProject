@@ -1,6 +1,6 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.1)  7 MAR 2018 11:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.1)  14 MAR 2018 17:13
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **thesis.tex
 (/home/jelle/RUG/FTP/thesis/thesis.tex
@@ -1167,241 +1167,7 @@ LaTeX Info: Redefining \- on input line 2746.
 . Defining command \liningnums with sig. 'm' on line 2845.
 .................................................
 ))
-\g__fontspec_family_TeXGyrePagella_int=\count366
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TeXGyrePagella(0)' created for font 'TeX Gyre Pagella' with
-. options [Ligatures=TeX,Ligatures=TeX,Numbers=OldStyle].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-+smcp;"-
-. 'bold' (bx/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;+smcp;"-
-. 'italic' (m/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;+smcp;"-
-. 'bold italic' (bx/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;+smcp;"
-.................................................
-
-(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty
-Package: unicode-math 2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucharcat/ucharcat.sty
-Package: ucharcat 2015/11/19 v0.03 ucharcat for luaLaTeX (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
-Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
-Package: filehook 2011/10/12 v0.5d Hooks for input files
-
-(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook-scrlfile.sty
-Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
-Package filehook Info: Package 'scrlfile' detected and compensated for on input
- line 102.
-))
-\g__um_fam_int=\count367
-\g__um_primekern_muskip=\muskip18
-\l__um_primecount_int=\count368
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \unimathsetup with sig. 'm' on line 168.
-.................................................
-
-(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathfontface with sig. 'mO{}mO{}' on line 165.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setoperatorfont with sig. 'm' on line 169.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \setmathfont with sig. 'O{}mO{}' on line 278.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \addnolimits with sig. 'm' on line 520.
-.................................................
-.................................................
-. LaTeX info: "xparse/define-command"
-. 
-. Defining command \removenolimits with sig. 'm' on line 524.
-.................................................
-
-(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
-.................................................
-. unicode-math info: "patch-macro"
-. 
-. I'm going to patch macro \subarray.
-.................................................
-.................................................
-. unicode-math info: "patch-macro"
-. 
-. I'm going to patch macro \r@@t.
-.................................................
-))
-\g__fontspec_family_TeXGyrePagellaMath_int=\count369
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TeXGyrePagellaMath(0)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Siz
-e=8-10.95,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-8,Font=TeX Gyre Pagella
-. Math,Style=MathScriptScript}}].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <10.95->"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<8-10.95>"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-8>"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=1;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-.................................................
-LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 193.
-
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/TeXGyrePagellaMath(0)/m/n on input 
-line 193.
-LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 193.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/TeXGyrePagellaMath(0)/bx/n on inpu
-t line 193.
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TeXGyrePagellaMath(1)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Siz
-e=8-10.95,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-8,Font=TeX Gyre Pagella
-. Math,Style=MathScriptScript}},Scale=1.00001,FontAdjustment={\fontdimen
-. 8\font =7.884pt\relax \relax \fontdimen 9\font =5.13554pt\relax \relax
-. \fontdimen 10\font =5.13554pt\relax \relax \fontdimen 11\font
-. =7.2927pt\relax \relax \fontdimen 12\font =3.40546pt\relax \relax \fontdimen
-. 13\font =3.8763pt\relax \relax \fontdimen 14\font =3.8763pt\relax \relax
-. \fontdimen 15\font =3.2412pt\relax \relax \fontdimen 16\font =2.5404pt\relax
-. \relax \fontdimen 17\font =2.5404pt\relax \relax \fontdimen 18\font
-. =2.5404pt\relax \relax \fontdimen 19\font =1.2702pt\relax \relax \fontdimen
-. 20\font =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font
-. =2.7375pt\relax \relax }].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <10.95->s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<8-10.95>s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-8>s*[1.00001]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=1;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 8\font =7.884pt\relax \relax \fontdimen 9\font =5.13554pt\relax
-. \relax \fontdimen 10\font =5.13554pt\relax \relax \fontdimen 11\font
-. =7.2927pt\relax \relax \fontdimen 12\font =3.40546pt\relax \relax \fontdimen
-. 13\font =3.8763pt\relax \relax \fontdimen 14\font =3.8763pt\relax \relax
-. \fontdimen 15\font =3.2412pt\relax \relax \fontdimen 16\font =2.5404pt\relax
-. \relax \fontdimen 17\font =2.5404pt\relax \relax \fontdimen 18\font
-. =2.5404pt\relax \relax \fontdimen 19\font =1.2702pt\relax \relax \fontdimen
-. 20\font =0pt\relax \fontdimen 21\font =0pt\relax \fontdimen 22\font
-. =2.7375pt\relax \relax 
-.................................................
-LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 193.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> EU1/TeXGyrePagellaMath(1)/m/n on input
- line 193.
-LaTeX Font Info:    Encoding `OMS' has changed to `EU1' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 193.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> EU1/TeXGyrePagellaMath(1)/bx/n on inpu
-t line 193.
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font TeX Gyre Pagella Math/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'TeXGyrePagellaMath(2)' created for font 'TeX Gyre Pagella Math'
-. with options
-. [BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Siz
-e=8-10.95,Font=TeX
-. Gyre Pagella Math,Style=MathScript},{Size=-8,Font=TeX Gyre Pagella
-. Math,Style=MathScriptScript}},Scale=0.99999,FontAdjustment={\fontdimen
-. 8\font =0.657pt\relax \relax \fontdimen 9\font =1.314pt\relax \relax
-. \fontdimen 10\font =1.314pt\relax \relax \fontdimen 11\font =1.314pt\relax
-. \relax \fontdimen 12\font =5.1246pt\relax \relax \fontdimen 13\font
-. =0pt\relax }].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <10.95->s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;"<8-10.95>s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=0;"<-8>s*[0.99999]"TeX Gyre Pagella
-. Math/OT:script=math;language=DFLT;+ssty=1;"
-. - 'small caps'  (m/sc) with NFSS spec.: 
-. and font adjustment code:
-. \fontdimen 8\font =0.657pt\relax \relax \fontdimen 9\font =1.314pt\relax
-. \relax \fontdimen 10\font =1.314pt\relax \relax \fontdimen 11\font
-. =1.314pt\relax \relax \fontdimen 12\font =5.1246pt\relax \relax \fontdimen
-. 13\font =0pt\relax 
-.................................................
-LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-93.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/m/n on input
- line 193.
-LaTeX Font Info:    Encoding `OMX' has changed to `EU1' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 193
-.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> EU1/TeXGyrePagellaMath(2)/bx/n on inpu
-t line 193.
-\g__fontspec_family_DejaVuSansMono_int=\count370
+\g__fontspec_family_DejaVuSansMono_int=\count366
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1434,42 +1200,19 @@ t line 193.
 . \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
 . \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font 
 .................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'DejaVuSansMono(1)' created for font 'DejaVu Sans Mono' with
-. options [Scale=0.85].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->s*[0.85]"DejaVu Sans
-. Mono/OT:script=latn;language=DFLT;"
-. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
-. <->s*[0.85]"DejaVu Sans Mono/B/OT:script=latn;language=DFLT;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
-. spec.: <->s*[0.85]"DejaVu Sans Mono/I/OT:script=latn;language=DFLT;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: - 'bold italic' (bx/it)
-. with NFSS spec.: <->s*[0.85]"DejaVu Sans
-. Mono/BI/OT:script=latn;language=DFLT;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
-.................................................
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(1)/m/n on input lin
-e 193.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(1)/bx/n on input li
-ne 193.
 LaTeX Font Info:    Try loading font information for U+eur on input line 197.
+
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks37
-\MT@count=\count371
+\MT@count=\count367
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen172
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count372
+\MT@listname@count=\count368
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def
 File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
@@ -1489,13 +1232,13 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \evensidemargin = 92.58438pt
 (typearea)              \oddsidemargin  = 24.38356pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 662.6498pt
+(typearea)              \textheight     = 666.04997pt
 (typearea)              \topmargin      = -40.58768pt
 (typearea)              \headheight     = 15.95pt
-(typearea)              \headsep        = 21.42006pt
+(typearea)              \headsep        = 20.40001pt
 (typearea)              \topskip        = 11.0pt
-(typearea)              \footskip       = 49.98015pt
-(typearea)              \baselineskip   = 14.28004pt
+(typearea)              \footskip       = 47.60002pt
+(typearea)              \baselineskip   = 13.6pt
 (typearea)              on input line 246.
 
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -1510,12 +1253,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen180
 \cmidrulekern=\dimen181
 \defaultaddspace=\dimen182
-\@cmidla=\count373
-\@cmidlb=\count374
+\@cmidla=\count369
+\@cmidlb=\count370
 \@aboverulesep=\dimen183
 \@belowrulesep=\dimen184
-\@thisruleclass=\count375
-\@lastruleclass=\count376
+\@thisruleclass=\count371
+\@lastruleclass=\count372
 \@thisrulewidth=\dimen185
 )
 (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
@@ -1610,11 +1353,11 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \newchnumberwidth=\skip119
 \figurelabelwidth=\skip120
 \tablelabelwidth=\skip121
-\c@listings=\count377
+\c@listings=\count373
 \cftbeforelistingsskip=\skip122
 \cftlistingsindent=\skip123
 \cftlistingsnumwidth=\skip124
-\c@loldepth=\count378
+\c@loldepth=\count374
 \cftbeforeloltitleskip=\skip125
 \cftafterloltitleskip=\skip126
 \listingslabelwidth=\skip127
@@ -1634,15 +1377,15 @@ Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count379
-\calc@Bcount=\count380
+\calc@Acount=\count375
+\calc@Bcount=\count376
 \calc@Adimen=\dimen191
 \calc@Bdimen=\dimen192
 \calc@Askip=\skip128
 \calc@Bskip=\skip129
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count381
+\calc@Ccount=\count377
 \calc@Cskip=\skip130
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -1657,6 +1400,489 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 \tileX=\skip137
 \tileY=\skip138
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/fira/FiraSans.sty
+Package: FiraSans 2014/11/19 (Bob Tennent and autoinst) Style file for Fira San
+s fonts.
+
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count378
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+Requested font "[FiraSans-Regular.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+\g__fontspec_family_FiraSans_int=\count379
+Requested font "[FiraSans-Bold.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Bold.otf
+Requested font "[FiraSans-RegularItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-RegularIt
+alic.otf
+Requested font "[FiraSans-BoldItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-BoldItali
+c.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(0)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Ligatures=TeX,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(1)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(2)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,Lining},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+pnum;+lnum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+pnum;+lnum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+lnum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+lnum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+pnum;+lnum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+pnum;+lnum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+lnum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+lnum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(3)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Monospaced,OldStyle},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+tnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;+tnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+t
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+t
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+tnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;+tnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+tnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+tnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-Thin.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Thin.otf
+Requested font "[FiraSans-ThinItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-ThinItali
+c.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(4)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Thin,ItalicFont =
+. *-ThinItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Thin.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Thin.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-ThinItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-ThinItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-Light.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Light.otf
+Requested font "[FiraSans-LightItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-LightItal
+ic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(5)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Light,ItalicFont =
+. *-LightItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Light.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+
+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Light.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+
+pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-LightItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-
+text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-LightItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-
+text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-ExtraLight.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraLigh
+t.otf
+Requested font "[FiraSans-ExtraLightItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraLigh
+tItalic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(6)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-ExtraLight,ItalicFont =
+. *-ExtraLightItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraLight.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraLight.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraLightItalic.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraLightItalic.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-UltraLight.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-UltraLigh
+t.otf
+Requested font "[FiraSans-UltraLightItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-UltraLigh
+tItalic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(7)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-UltraLight,ItalicFont =
+. *-UltraLightItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-UltraLight.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-UltraLight.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-UltraLightItalic.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-UltraLightItalic.otf]/OT:script=latn;language=DFLT;mapping
+=tex-text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-Medium.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Medium.ot
+f
+Requested font "[FiraSans-MediumItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-MediumIta
+lic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(8)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Medium,ItalicFont =
+. *-MediumItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Medium.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Medium.otf]/OT:script=latn;language=DFLT;mapping=tex-text;
++pnum;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-MediumItalic.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-MediumItalic.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-Book.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Book.otf
+Requested font "[FiraSans-BookItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-BookItali
+c.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(9)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Book,ItalicFont =
+. *-BookItalic,BoldFont = *-Bold,BoldItalicFont = *-BoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Book.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Book.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+p
+num;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BookItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BookItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-SemiBold.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-SemiBold.
+otf
+Requested font "[FiraSans-SemiBoldItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-SemiBoldI
+talic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(10)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-SemiBold,ItalicFont =
+. *-SemiBoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-SemiBold.otf]/OT:script=latn;language=DFLT;mapping=tex-tex
+t;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-SemiBold.otf]/OT:script=latn;language=DFLT;mapping=tex-tex
+t;+pnum;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-SemiBoldItalic.otf]/OT:script=latn;language=DFLT;mapping=t
+ex-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-SemiBoldItalic.otf]/OT:script=latn;language=DFLT;mapping=t
+ex-text;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-ExtraBold.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraBold
+.otf
+Requested font "[FiraSans-ExtraBoldItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-ExtraBold
+Italic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(11)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-ExtraBold,ItalicFont =
+. *-ExtraBoldItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraBold.otf]/OT:script=latn;language=DFLT;mapping=tex-te
+xt;+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraBold.otf]/OT:script=latn;language=DFLT;mapping=tex-te
+xt;+pnum;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraBoldItalic.otf]/OT:script=latn;language=DFLT;mapping=
+tex-text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-ExtraBoldItalic.otf]/OT:script=latn;language=DFLT;mapping=
+tex-text;+pnum;+onum;+smcp;"
+.................................................
+Requested font "[FiraSans-Heavy.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Heavy.otf
+Requested font "[FiraSans-HeavyItalic.otf]/OT" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-HeavyItal
+ic.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'FiraSans(12)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Heavy,ItalicFont = *-HeavyItalic].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Heavy.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+
+pnum;+onum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Heavy.otf]/OT:script=latn;language=DFLT;mapping=tex-text;+
+pnum;+onum;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-HeavyItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-
+text;+pnum;+onum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-HeavyItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-
+text;+pnum;+onum;+smcp;"
+.................................................
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1683,6 +1909,7 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/contents.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/introduction.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/background.aux)
+(/home/jelle/RUG/FTP/thesis/chapters/pipeline-protection.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/dataset.aux
 
 LaTeX Warning: Label `fig:dataset:cumulatief-recordings' multiply defined.
@@ -1711,6 +1938,11 @@ LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
 LaTeX Font Info:    ... okay on input line 54.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
 LaTeX Font Info:    ... okay on input line 54.
@@ -1725,6 +1957,12 @@ LaTeX Font Info:    Try loading font information for T3+cmr on input line 54.
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 54.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Data encoding 'ascii' specified.
@@ -1742,7 +1980,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count382
+\c@lstlisting=\count380
 Package scrhack Info: undefining \float@addtolists on input line 54.
 \AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring ON on input line 54.
@@ -1753,7 +1991,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count383
+\c@section@level=\count381
 )
 LaTeX Info: Redefining \ref on input line 54.
 LaTeX Info: Redefining \pageref on input line 54.
@@ -1766,560 +2004,76 @@ LaTeX Info: Redefining \nameref on input line 54.
 *** you should *not* be loading the inputenc package
 *** XeTeX expects the source to be in UTF8 encoding
 *** some features of other encodings may conflict, resulting in poor output.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 54.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 54.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 54.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 54.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 54.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 54.
+LaTeX Font Info:    Redeclaring math accent \check on input line 54.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 54.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 54.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 54.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 54.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 54.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 54.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 54.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 54.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/FiraSans(0)/m/n on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/m/n on input lin
+e 54.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 54.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/FiraSans(0)/bx/n on input line 54
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/DejaVuSansMono(0)/bx/n on input li
+ne 54.
 LaTeX Info: Redefining \microtypecontext on input line 54.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-PalatinoLinotype.cfg
-File: mt-PalatinoLinotype.cfg 2012/03/10 v1.0 microtype config. file: Palatino 
-Linotype and similar fonts (LBD)
-)
-Package microtype Info: Character `Ǟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ǡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȧ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȃ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḁ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ꜳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḃ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḙ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḛ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḝ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḣ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ǩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḵ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḻ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḽ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ỻ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ḿ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṁ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ǹ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ǭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȫ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȯ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṍ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṥ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṧ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṫ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ǖ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṵ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṷ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṹ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṻ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṽ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ṿ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẍ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ȳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `Ẕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȧ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȃ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḁ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḃ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḙ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḛ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḝ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḣ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẖ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḵ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḻ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḽ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ḿ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṁ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǹ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȫ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȭ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȯ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṍ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȓ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṟ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṡ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṥ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṧ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṩ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṫ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṱ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ǖ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȗ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṵ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṷ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṹ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṻ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṽ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ṿ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẇ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẉ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẘ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẋ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẍ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ȳ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẏ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẙ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẑ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ẕ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-
+Package microtype Info: Loading generic settings for font family
+(microtype)             `FiraSans' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 ABD: EveryShipout initializing macros
 \openout2 = `frontBackmatter/dirtyTitlepage.aux'.
 
@@ -2328,254 +2082,34 @@ No file frontBackmatter/dirtyTitlepage.tex.
 \openout2 = `frontBackmatter/titlepage.aux'.
 
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/titlepage.tex
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/24.88'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 24.88pt on input line 10.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 24.88pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 )
 \openout2 = `frontBackmatter/titleback.aux'.
 
 
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/titleback.tex
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/it/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 9.
+Requested font "[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mappi
+ng=tex-text;mapping=tex-text;+pnum;+onum;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-RegularIt
+alic.otf
 )
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/9'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 67.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 LaTeX Font Info:    Font shape `EU1/DejaVuSansMono(0)/m/n' will be
 (Font)              scaled to size 7.65005pt on input line 67.
+Requested font "DejaVu Sans Mono/OT:script=latn;language=DFLT;" at 7.65005pt
+ -> 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `DejaVuSansMono' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
@@ -2612,107 +2146,30 @@ File: ./gfx/rug_logo_white.png Graphic file (type QTm)
 
 
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/foreword.tex)
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `TeXGyrePagellaMath' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 69.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 69.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 69.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 69.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 69.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 69.
- [5
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 69.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 10.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mod
+ern Roman (RS)
+)
+Requested font "[lmroman7-regular]:mapping=tex-text" at 7.0pt
+ -> /usr/share/texmf/fonts/opentype/public/lm/lmroman7-regular.otf
+Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
+ -> /usr/share/texmf/fonts/opentype/public/lm/lmroman5-regular.otf
+Requested font "cmex7" at 7.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+Requested font "cmex7" at 5.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+) [5
 
 ] [6
 
@@ -2726,133 +2183,74 @@ LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagella(1)' created for font 'TeX Gyre Pagella' with
-. options [Ligatures=TeX,Ligatures=TeX,Numbers=OldStyle,LetterSpace=18.0].
+. Font family 'FiraSans(13)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Ligatures=TeX,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont =
+. *-BoldItalic,LetterSpace=18.0].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-letterspace=18.0;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-letterspace=18.0;+smcp;"-
-. 'bold' (bx/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=18.0;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=18.0;+smcp;"-
-. 'italic' (m/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=18.0;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=18.0;+smcp;"-
-. 'bold italic' (bx/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;letterspace=18.0;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;letterspace=18.0;+smcp;"
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;letterspace=18.0;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;letterspace=18.0;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;letterspace=18.0;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;letterspace=18.0;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;letterspace=18.0;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;letterspace=18.0;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;letterspace=18.0;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;letterspace=18.0;+smcp;"
 .................................................
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(1)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(13)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 13.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;letterspace=18.0;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 LaTeX Font Info:    Font shape `EU1/DejaVuSansMono(0)/m/n' will be
 (Font)              scaled to size 9.30756pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 8.10922pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 6.02809pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 8.10896pt on input line 17.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 6.0279pt on input line 17.
+Requested font "DejaVu Sans Mono/OT:script=latn;language=DFLT;" at 9.30756pt
+ -> 
+Requested font "[lmroman8-regular]:mapping=tex-text" at 8.0pt
+ -> /usr/share/texmf/fonts/opentype/public/lm/lmroman8-regular.otf
+Requested font "[lmroman6-regular]:mapping=tex-text" at 6.0pt
+ -> /usr/share/texmf/fonts/opentype/public/lm/lmroman6-regular.otf
+Requested font "cmmi10" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+Requested font "cmmi8" at 8.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+Requested font "cmmi6" at 6.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+Requested font "cmsy10" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+Requested font "cmsy8" at 8.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+Requested font "cmsy6" at 6.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+Requested font "cmex10" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+Requested font "cmex8" at 8.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+Requested font "cmex7" at 6.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+Requested font "cmr8" at 8.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+Requested font "cmr6" at 6.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 ) [7
 
 ] [8
@@ -2864,196 +2262,56 @@ LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
 
 
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/acknowledgments.tex
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagella(0)/m/sl' in size <10.95> not
- available
-(Font)              Font shape `EU1/TeXGyrePagella(0)/m/it' tried instead on in
-put line 8.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/8.1091'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 9.00014pt on input line 32.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 32.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 8.99986pt on input line 32.
-LaTeX Font Info:    Font shape `EU1/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 32.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/n/6'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/sl' in size <10.95> not avail
+able
+(Font)              Font shape `EU1/FiraSans(0)/m/it' tried instead on input li
+ne 8.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 8.
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 31.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 8.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+Requested font "[lmroman9-regular]:mapping=tex-text" at 9.0pt
+ -> /usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf
+Requested font "cmmi9" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+Requested font "cmsy9" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+Requested font "cmex9" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+Requested font "cmr9" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 32.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;" at 6.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 
-Overfull \hbox (16.57544pt too wide) in paragraph at lines 29--40
-\EU1/TeXGyrePagella(0)/m/n/10.95 Kuhlmann, Philipp Lehman, Lothar Schlesier, Ji
-m Young, Lorenzo Pantieri
+Overfull \hbox (0.46895pt too wide) in paragraph at lines 29--40
+[]\EU1/FiraSans(0)/m/n/10.95 Regarding the typography and other help, many than
+ks go to Marco
  []
 
 
-Overfull \hbox (2.17558pt too wide) in paragraph at lines 29--40
-\EU1/TeXGyrePagella(0)/m/n/10.95 and Enrico Gregorio[], Jörg Sommer, Joachim Kö
-stler, Daniel Gottschlag,
+Overfull \hbox (16.24716pt too wide) in paragraph at lines 29--40
+\EU1/FiraSans(0)/m/n/10.95 Kuhlmann, Philipp Lehman, Lothar Schlesier, Jim Youn
+g, Lorenzo Pantieri
+ []
+
+
+Overfull \hbox (4.15414pt too wide) in paragraph at lines 29--40
+\EU1/FiraSans(0)/m/n/10.95 and Enrico Gregorio[], Jörg Sommer, Joachim Köstler,
+ Daniel Gottschlag,
+ []
+
+
+Overfull \hbox (1.84792pt too wide) in paragraph at lines 29--40
+\EU1/FiraSans(0)/m/n/10.95 Clemens Niederberger, Stefano Bragaglia, Jörn Hees, 
+Scott Lowe, Dave
  []
 
 ) [9
@@ -3073,299 +2331,56 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 14
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'TeXGyrePagella(2)' created for font 'TeX Gyre Pagella' with
-. options [Ligatures=TeX,Ligatures=TeX,Numbers=OldStyle,LetterSpace=14.0].
+. Font family 'FiraSans(14)' created for font 'FiraSans' with options
+. [Ligatures = TeX,Scale = 1,Extension = .otf,Ligatures=TeX,Numbers =
+. {Proportional,OldStyle},UprightFont = *-Regular,ItalicFont =
+. *-RegularItalic,BoldFont = *-Bold,BoldItalicFont =
+. *-BoldItalic,LetterSpace=14.0].
 . 
 . This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-letterspace=14.0;"
-. - 'small caps'  (m/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onum;
-letterspace=14.0;+smcp;"-
-. 'bold' (bx/n) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=14.0;"
-. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"TeX Gyre
-. Pagella/B/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=14.0;+smcp;"-
-. 'italic' (m/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=14.0;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/I/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+onu
-m;letterspace=14.0;+smcp;"-
-. 'bold italic' (bx/it) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;letterspace=14.0;"
-. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: <->"TeX Gyre
-. Pagella/BI/OT:script=latn;language=DFLT;mapping=tex-text;mapping=tex-text;+on
-um;letterspace=14.0;+smcp;"
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;letterspace=14.0;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex-text
+;mapping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;"-
+. 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;letterspace=14.0;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[FiraSans-Bold.otf]/OT:script=latn;language=DFLT;mapping=tex-text;ma
+pping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;"-
+. 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-RegularItalic.otf]/OT:script=latn;language=DFLT;mapping=te
+x-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;"-
+. 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;letterspace=14.0;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[FiraSans-BoldItalic.otf]/OT:script=latn;language=DFLT;mapping=tex-t
+ext;mapping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;"
 .................................................
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(0)/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `EU1/FiraSans(14)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 9.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+LaTeX Font Info:    Font shape `EU1/FiraSans(14)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 9.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+LaTeX Font Info:    Font shape `EU1/FiraSans(0)/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 11.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;+smcp;" at 10.95pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
 )
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
@@ -3383,9 +2398,9 @@ Package microtype Info: Character `ﬆ' is missing
 Package tocbasic Info: character protrusion at lof deactivated on input line 33
 .
  (/home/jelle/RUG/FTP/thesis/thesis.lof
-Overfull \hbox (17.16301pt too wide) in paragraph at lines 31--31
- \EU1/TeXGyrePagella(0)/m/n/10.95 cients used for the polynomial interpolation.
- []  
+Overfull \hbox (3.78581pt too wide) in paragraph at lines 33--33
+ [][] []\EU1/FiraSans(0)/m/n/10.95 The average leave one out cross validation o
+ver 
  []
 
 )
@@ -3412,15 +2427,9 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 44
 (/home/jelle/RUG/FTP/thesis/chapters/introduction.tex
 Chapter 1.
 
-Overfull \hbox (8.03629pt too wide) in paragraph at lines 11--13
-\EU1/TeXGyrePagella(0)/m/n/10.95 where pipe sections with some of their propert
-ies are shown. This project
- []
-
-
-Overfull \hbox (0.2499pt too wide) in paragraph at lines 14--15
-\EU1/TeXGyrePagella(0)/m/n/10.95 ValueA is involved with. Another classificatio
-n problem involves Fraud
+Overfull \hbox (2.44012pt too wide) in paragraph at lines 28--29
+\EU1/FiraSans(0)/m/n/10.95 ValueA is involved with. Another classification prob
+lem involves Fraud
  []
 
 [1
@@ -3433,190 +2442,25 @@ n problem involves Fraud
 
 
 ]
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `\EU1/TeXGyrePagella(2)/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
+Requested font "[FiraSans-Regular.otf]/OT" at 10.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+LaTeX Font Info:    Font shape `EU1/FiraSans(14)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 50.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;" at 10.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
+LaTeX Font Info:    Font shape `EU1/FiraSans(14)/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 50.
+Requested font "[FiraSans-Regular.otf]/OT:script=latn;language=DFLT;mapping=tex
+-text;mapping=tex-text;+pnum;+onum;letterspace=14.0;+smcp;" at 10.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.o
+tf
  [2]
-Overfull \hbox (3.87985pt too wide) in paragraph at lines 38--39
-\EU1/TeXGyrePagella(0)/m/n/10.95 As requested by ValueA the student will develo
-p the software in Python. 
- []
-
-
-Overfull \hbox (1.57303pt too wide) in paragraph at lines 40--41
-[]\EU1/TeXGyrePagella(0)/m/n/10.95 End of December. Classification module descr
-iption. A document
+Overfull \hbox (8.75252pt too wide) in paragraph at lines 52--53
+\EU1/FiraSans(0)/m/n/10.95 As requested by ValueA the student will develop the 
+software in Python. 
  []
 
 ) [3]
@@ -3630,11 +2474,21 @@ Chapter 2.
 
 
 ]) [5]
+\openout2 = `chapters/pipeline-protection.aux'.
+
+ (/home/jelle/RUG/FTP/thesis/chapters/pipeline-protection.tex
+Chapter 3.
+[6
+
+
+
+
+]) [7]
 \openout2 = `chapters/dataset.aux'.
 
  (/home/jelle/RUG/FTP/thesis/chapters/dataset.tex
-Chapter 3.
-[6
+Chapter 4.
+[8
 
 
 
@@ -3643,15 +2497,25 @@ Chapter 3.
 File: ./gfx/chapters/data/cumulatief-recordings-per-measurepoint.pdf Graphic fi
 le (type QTm)
  <use  "./gfx/chapters/data/cumulatief-recordings-per-measurepoint.pdf" >
-File: ./gfx/chapters/data/Average-LOOCV-Error.pdf Graphic file (type QTm)
+Overfull \hbox (8.89221pt too wide) in paragraph at lines 60--61
+\EU1/FiraSans(0)/m/n/10.95 The method we proposed to use to predict the voltage
+s of the pipelines
+ []
 
-<use  "./gfx/chapters/data/Average-LOOCV-Error.pdf" > [7]) [8]
+
+Overfull \hbox (1.21623pt too wide) in paragraph at lines 62--63
+[]\EU1/FiraSans(0)/m/n/10.95 Before the interpolation method was applied the da
+ta was checked
+ []
+
+File: ./gfx/chapters/data/Average-LOOCV-Error.pdf Graphic file (type QTm)
+<use  "./gfx/chapters/data/Average-LOOCV-Error.pdf" >) [9] [10]
 \openout2 = `chapters/methods.aux'.
 
 
 (/home/jelle/RUG/FTP/thesis/chapters/methods.tex
-Chapter 4.
-) [9
+Chapter 5.
+) [11
 
 
 
@@ -3664,25 +2528,25 @@ No file chapters/experiments.tex.
 \openout2 = `chapters/results.aux'.
 
 (/home/jelle/RUG/FTP/thesis/chapters/results.tex
-Chapter 5.
-[10
-
-
-
-
-
-
-]) [11]
-\openout2 = `chapters/discussion.aux'.
-
- (/home/jelle/RUG/FTP/thesis/chapters/discussion.tex
 Chapter 6.
 [12
 
 
 
 
+
+
 ]) [13]
+\openout2 = `chapters/discussion.aux'.
+
+ (/home/jelle/RUG/FTP/thesis/chapters/discussion.tex
+Chapter 7.
+[14
+
+
+
+
+]) [15]
 \openout2 = `chapters/conclusion.aux'.
 
 
@@ -3690,7 +2554,7 @@ No file chapters/conclusion.tex.
 \openout2 = `appendices/appendixA.aux'.
 
 No file appendices/appendixA.tex.
-[14
+[16
 
 
 
@@ -3701,23 +2565,23 @@ No file appendices/appendixA.tex.
 ]
 \openout2 = `frontBackmatter/bibliography.aux'.
 
- (/home/jelle/RUG/FTP/thesis/frontBackmatter/bibliography.tex) [15
+ (/home/jelle/RUG/FTP/thesis/frontBackmatter/bibliography.tex) [17
 
 
 
 ]
-[16
+[18
 
 
 
 ]
 \openout2 = `frontBackmatter/declaration.aux'.
 
- (/home/jelle/RUG/FTP/thesis/frontBackmatter/declaration.tex) [17
+ (/home/jelle/RUG/FTP/thesis/frontBackmatter/declaration.tex) [19
 
 
 
-] [18
+] [20
 
 
 
@@ -3725,18 +2589,13 @@ No file appendices/appendixA.tex.
 \openout2 = `frontBackmatter/colophon.aux'.
 
 
-(/home/jelle/RUG/FTP/thesis/frontBackmatter/colophon.tex
-Overfull \hbox (0.76959pt too wide) in paragraph at lines 12--15
-\EU1/TeXGyrePagella(0)/m/n/10.95 This document was typeset using the typographi
-cal look-and-feel \EU1/DejaVuSansMono(0)/m/n/10.95 clas-
- []
-
-) [19
+(/home/jelle/RUG/FTP/thesis/frontBackmatter/colophon.tex) [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
- (/home/jelle/RUG/FTP/thesis/thesis.aux
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+
+(/home/jelle/RUG/FTP/thesis/thesis.aux
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/dirtyTitlepage.aux)
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/titlepage.aux)
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/titleback.aux)
@@ -3747,6 +2606,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/contents.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/introduction.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/background.aux)
+(/home/jelle/RUG/FTP/thesis/chapters/pipeline-protection.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/dataset.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/methods.aux)
 (/home/jelle/RUG/FTP/thesis/chapters/experiments.aux)
@@ -3757,7 +2617,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/bibliography.aux)
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/declaration.aux)
 (/home/jelle/RUG/FTP/thesis/frontBackmatter/colophon.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 103.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 104.
 
 
  *File List*
@@ -3892,14 +2752,6 @@ xunicode.sty    2011/09/09 v0.981 provides access to latin accents and many oth
 er characters in Unicode lower plane
  eu1lmss.fd    2009/10/30 v1.6 Font defs for Latin Modern
 fontspec.cfg
-unicode-math.sty    2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
-ucharcat.sty    2015/11/19 v0.03 ucharcat for luaLaTeX (DPC)
-l3keys2e.sty    2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
-  fix-cm.sty    2015/01/14 v1.1t fixes to LaTeX
-  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-filehook.sty    2011/10/12 v0.5d Hooks for input files
-filehook-scrlfile.sty    2011/01/03 v0.1 filehook patch for scrlfile package
-unicode-math-xetex.sty    
     ueur.fd    2013/01/14 v3.01 Euler Roman
 microtype.sty    2013/05/23 v2.5a Micro-typographical refinements (RS)
 microtype-xetex.def    2013/05/23 v2.5a Definitions specific to xetex (RS)
@@ -3918,27 +2770,35 @@ everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
 wallpaper.sty    2005/01/18, v1.01 easy wallpaper formatting (MHFW)
     calc.sty    2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
  eso-pic.sty    2015/07/21 v2.0g eso-pic (RN)
+FiraSans.sty    2014/11/19 (Bob Tennent and autoinst) Style file for Fira Sans 
+fonts.
+ xkeyval.sty    2014/12/03 v2.7a package option processing (HA)
+ xkeyval.tex    2014/12/03 v2.7a key=value parser (HA)
  english.lbx    2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 american.lbx    2016/03/03 v3.3 biblatex localization (PK/JW/AB)
+  ts1cmr.fd    2014/09/29 v2.5h Standard LaTeX font definitions
    t3cmr.fd    2001/12/31 TIPA font definitions
   thesis.bbl
  nameref.sty    2012/10/27 v2.43 Cross-referencing by name of section
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
   thesis.out
   thesis.out
-mt-PalatinoLinotype.cfg    2012/03/10 v1.0 microtype config. file: Palatino Lin
-otype and similar fonts (LBD)
 frontBackmatter/titlepage.tex
 frontBackmatter/titleback.tex
 ./gfx/front.jpg
 ./gfx/rug_logo_white.png
 frontBackmatter/dedication.tex
 frontBackmatter/foreword.tex
+mt-LatinModernRoman.cfg    2013/03/13 v1.0 microtype config. file: Latin Modern
+ Roman (RS)
+  mt-cmr.cfg    2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
+RS)
 frontBackmatter/abstract.tex
 frontBackmatter/acknowledgments.tex
 frontBackmatter/contents.tex
 chapters/introduction.tex
 chapters/background.tex
+chapters/pipeline-protection.tex
 chapters/dataset.tex
 ./gfx/chapters/data/cumulatief-recordings-per-measurepoint.pdf
 ./gfx/chapters/data/Average-LOOCV-Error.pdf
@@ -3950,7 +2810,7 @@ frontBackmatter/declaration.tex
 frontBackmatter/colophon.tex
  ***********
 
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 104.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -3960,12 +2820,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iftrue on line 54 was incomplete) 
 Here is how much of TeX's memory you used:
- 40674 strings out of 495564
- 742610 string characters out of 6186599
- 1077870 words of memory out of 5000000
- 43318 multiletter control sequences out of 15000+600000
- 9020 words of font info for 81 fonts, out of 8000000 for 9000
+ 37575 strings out of 495564
+ 705195 string characters out of 6186599
+ 1077565 words of memory out of 5000000
+ 40169 multiletter control sequences out of 15000+600000
+ 10483 words of font info for 89 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 85i,22n,108p,10380b,1951s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,22n,135p,10380b,1973s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /home/jelle/RUG/FTP/thesis/thesis.pdf (31 pages).
+Output written on /home/jelle/RUG/FTP/thesis/thesis.pdf (33 pages).

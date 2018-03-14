@@ -26,9 +26,11 @@
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The number of measurements per measuring point against the cumulative number of measuring points having that number of measurements.\relax }}{8}{figure.caption.2}
+\ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The average leave one out cross validation over all areas plotted against the number of $N$ coefficients used for the polynomial interpolation.\relax }}{8}{figure.caption.3}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The number of measurements per measuring point against the cumulative number of measuring points having that number of measurements.\relax }}{10}{figure.caption.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The average leave one out cross validation over all areas plotted against the number of $N$ coefficients used for the polynomial interpolation.\relax }}{10}{figure.caption.3}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
