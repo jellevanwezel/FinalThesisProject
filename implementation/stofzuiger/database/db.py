@@ -2,6 +2,10 @@ import psycopg2 as pg
 import pandas as pd
 import os
 import json
+import numpy as np
+from shapely.geometry import LineString
+from shapely import wkb
+import matplotlib.pyplot as plt
 
 
 class DB:
@@ -108,3 +112,59 @@ class DB:
         """
         query = self.getQuery('kb_oodi_dd')
         return self.do_query(query, {"root_id": root_id})
+
+    def get_kb_ground_areas(self):
+        """
+        Gets all the ground info
+        :return: A dataframe with the ground infos
+        :rtype pandas.DataFrame:
+        """
+        query = self.getQuery('kb_ground_areas')
+        return self.do_query(query)
+
+    def get_kb_pipe_segments(self, roots):
+        roots_string = "("+",".join(str(root) for root in roots)+")"
+        query = self.getQuery("kb_pipe_segments")
+        return self.do_query( query.replace("%(root_ids)s",roots_string))
+
+    def get_kb_pipe_segments_roots(self):
+        query = self.getQuery('kb_pipe_roots')
+        return self.do_query(query)
+
+db = DB();
+
+# roots_df = db.get_kb_pipe_segments_roots()
+# for area in roots_df.area.unique():
+#     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
+#     print area
+#     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
+#     n_roots = len(area_segments_df.root.unique())
+#     area_dict = {"coating":np.zeros([n_roots]),"length": np.zeros([n_roots])}
+#     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
+#         segment_df = area_segments_df[area_segments_df.root == root_id]
+#         bit_df = segment_df[segment_df.coating == 9]
+#         pce_df = segment_df[segment_df.coating == 10]
+#         bit_length = np.array(bit_df.length.values)
+#         pce_length = np.array(pce_df.length.values)
+#         sum_bit = np.sum(bit_length)
+#         sum_pce = np.sum(pce_length)
+#         total_length = np.sum(sum_bit) + np.sum(sum_pce)
+#         area_dict['coating'][idx] = sum_pce
+#         area_dict['length'][idx] = total_length
+#     print "mps:", len(area_dict['coating']), ", total pce:", np.sum(area_dict["coating"]) / np.sum(area_dict["length"]), ", total length:" ,  np.sum(area_dict["length"])
+
+# roots_df = db.get_kb_pipe_segments_roots()
+# for area in roots_df.area.unique():
+#     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
+#     print area
+#     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
+#     n_roots = len(area_segments_df.root.unique())
+#     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
+#         segment_df = area_segments_df[area_segments_df.root == root_id]
+#         for idx, row in segment_df.iterrows():
+#             pipe_geom_string = row['geom']
+#             if pipe_geom_string is None: continue
+#             geom = wkb.loads(pipe_geom_string,hex=True)
+#             x, y = zip(*geom.coords[:])
+#             plt.plot(x,y)
+#     plt.show()

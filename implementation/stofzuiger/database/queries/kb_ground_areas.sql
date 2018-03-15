@@ -1,0 +1,1 @@
+SELECT t.* FROM kb.soil t ORDER BY id
