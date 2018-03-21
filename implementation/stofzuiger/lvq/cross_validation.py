@@ -11,8 +11,9 @@ from database.kb_model import AreaModel
 import numpy as np
 import glvq
 
+from feature_extraction.pipe_segment_tree import FeatureExtraction
+from feature_extraction.sliding_window import SlidingWindow
 from interpolation.poly_cheb import PolyInterpolation
-from lvq.feature_extraction import FeatureExtraction
 
 import matplotlib.pyplot as plt
 
@@ -33,7 +34,7 @@ class LOOCV:
         self.nr_of_bins=nr_of_bins
         self.area_model = AreaModel()
         self.polyInt = PolyInterpolation()
-        self.feature_ext = FeatureExtraction(feature_size,nr_of_coefs,nr_of_bins,nr_of_samples)
+        self.feature_ext = SlidingWindow(feature_size,nr_of_coefs,nr_of_bins,nr_of_samples)
         self.lvq_model = lvq_model
         print " --- Config --- "
         for key,val in self.__dict__.items(): print str(key) + ": " + str(val)
@@ -64,6 +65,9 @@ class LOOCV:
 
     def cross_validate_per_area(self):
         nr_of_areas = self.area_model.get_number_of_areas()
+
+
+
         for area_idx in range(0,nr_of_areas):
             print self.area_model.get_area_name(area_idx) + " " + str(area_idx + 1) + "/" + str(nr_of_areas)
             nr_of_mps = self.area_model.get_number_of_mps(area_idx)
@@ -75,6 +79,9 @@ class LOOCV:
                 if meas_df is None: continue
                 features, labels, labels_gradients = self.feature_ext.create_features_labels(meas_df)
                 if self.gradients:labels = labels_gradients
+
+                #concatinate the extracted features with the sliding window features
+
                 area_features = np.concatenate((area_features,features),axis=0)
                 area_labels = np.concatenate((area_labels,labels),axis=0)
             if len(area_features) == 0:
@@ -88,18 +95,28 @@ class LOOCV:
         nr_of_areas = self.area_model.get_number_of_areas()
         all_features = np.array([]).reshape(0, self.feature_size)
         all_labels = np.array([])
+
+        # fe = FeatureExtraction()
+        # mp_features = fe.extract_segment_features()
+
+        mp_features = np.genfromtxt('../feature_extraction/feature_test.csv', dtype=None, delimiter=',', names=True)
+        print np.array(mp_features)
+
         for area_idx in range(0,nr_of_areas):
             nr_of_mps = self.area_model.get_number_of_mps(area_idx)
             for mp_idx in range(0,nr_of_mps):
+
                 meas_df = self.area_model.get_mp_df(area_idx,mp_idx)
                 meas_df = self.area_model.prepare_meas_df(meas_df)
                 if meas_df is None: continue
+                static_features = np.where(np.array(mp_features[:, 1]) == meas_df.id)
                 features, labels, labels_gradients = self.feature_ext.create_features_labels(meas_df)
+                features = np.concatenate((features,static_features),axis=1)
                 if self.gradients:labels = labels_gradients
                 all_features = np.concatenate((all_features,features),axis=0)
                 all_labels = np.concatenate((all_labels,labels),axis=0)
         binned_labels, bins = self.feature_ext.bin_labels(all_labels, self.nr_of_bins)
-        #self.n_fold(self.nr_of_folds, all_features, binned_labels,log_pregress=True)
+        self.n_fold(self.nr_of_folds, all_features, binned_labels,log_pregress=True)
 
     def _log_n_fold_progress(self,fold,nr_of_folds, start_time):
         unit = "s"
@@ -125,7 +142,7 @@ class LOOCV:
 
     def n_fold(self,nr_of_folds,features,labels,log_pregress=False,log_errors=True):
         kfold =  KFold(n_splits=nr_of_folds, shuffle=True)
-        error_dict = Counter({})
+        error_dict = Counter({}) #Counter dict, values start at 0 and can be added.
         if log_pregress:
             print " --- Progress --- "
             start_time = time.time()
@@ -147,4 +164,4 @@ class LOOCV:
         return test_data,test_label,train_data,train_label
 
 loocv = LOOCV(lvq_model=glvq.GmlvqModel)
-loocv.cross_validate_per_mp()
+loocv.cross_validate_all()
