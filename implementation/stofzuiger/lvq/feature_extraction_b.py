@@ -4,7 +4,7 @@ from interpolation.poly_cheb import PolyInterpolation
 import matplotlib.pyplot as plt
 
 
-class FeatureExtraction:
+class FeatureExtraction(object):
 
     def __init__(self,feature_size=10,nr_of_coefs=10,nr_of_bins=6,nr_of_samples=50, omit_first_coef=False):
         self.nr_of_samples = nr_of_samples

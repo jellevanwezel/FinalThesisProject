@@ -7,7 +7,7 @@ import os
 from statistics import stats
 
 
-class PolyInterpolation:
+class PolyInterpolation(object):
 
     def __init__(self,precision=6):
         self.precision = precision

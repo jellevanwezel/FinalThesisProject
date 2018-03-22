@@ -3,7 +3,7 @@ from interpolation.poly_cheb import PolyInterpolation
 import numpy as np
 
 
-class LOOCV:
+class LOOCV(object):
 
     def __init__(self,xval='date_float', yval='mep_uit'):
         self.xval = xval

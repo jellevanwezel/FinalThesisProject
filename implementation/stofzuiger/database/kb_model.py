@@ -2,7 +2,7 @@ from database.db import DB
 from statistics import stats
 
 
-class AreaModel:
+class AreaModel(object):
 
     def __init__(self,save_areas=True):
         self.save_areas = save_areas

@@ -11,7 +11,6 @@ from database.kb_model import AreaModel
 import numpy as np
 import glvq
 
-from feature_extraction.pipe_segment_tree import FeatureExtraction
 from feature_extraction.sliding_window import SlidingWindow
 from interpolation.poly_cheb import PolyInterpolation
 
@@ -22,8 +21,8 @@ from statistics import stats
 
 class LOOCV:
 
-    def __init__(self,xval='date_float', yval='mep_uit',feature_size=10,nr_of_coefs=10,nr_of_bins=20,
-                 nr_of_samples=40,gradients=True, nr_of_folds=20, lvq_model=glvq.GlvqModel,):
+    def __init__(self,xval='date_float', yval='mep_uit',feature_size=5,nr_of_coefs=10,nr_of_bins=10,
+                 nr_of_samples=30,gradients=False, nr_of_folds=2, lvq_model=glvq.GlvqModel,):
         self.xval = xval
         self.yval = yval
         self.nr_of_folds = nr_of_folds
@@ -96,22 +95,19 @@ class LOOCV:
         all_features = np.array([]).reshape(0, self.feature_size)
         all_labels = np.array([])
 
-        # fe = FeatureExtraction()
-        # mp_features = fe.extract_segment_features()
-
-        mp_features = np.genfromtxt('../feature_extraction/feature_test.csv', dtype=None, delimiter=',', names=True)
-        print np.array(mp_features)
+        mp_features = np.genfromtxt('../feature_extraction/feature_test.csv', dtype=None, delimiter=',', skip_header=0)
+        mp_features = mp_features[1:,:]
 
         for area_idx in range(0,nr_of_areas):
             nr_of_mps = self.area_model.get_number_of_mps(area_idx)
             for mp_idx in range(0,nr_of_mps):
-
                 meas_df = self.area_model.get_mp_df(area_idx,mp_idx)
+                meas_id = meas_df.measurepoint_id.values[0]
                 meas_df = self.area_model.prepare_meas_df(meas_df)
                 if meas_df is None: continue
-                static_features = np.where(np.array(mp_features[:, 1]) == meas_df.id)
+                static_features = np.where(np.array(mp_features[:, 1]) == meas_id)
                 features, labels, labels_gradients = self.feature_ext.create_features_labels(meas_df)
-                features = np.concatenate((features,static_features),axis=1)
+                features = np.concatenate((features, np.tile(static_features,(features.shape[0],1))),axis=1)
                 if self.gradients:labels = labels_gradients
                 all_features = np.concatenate((all_features,features),axis=0)
                 all_labels = np.concatenate((all_labels,labels),axis=0)

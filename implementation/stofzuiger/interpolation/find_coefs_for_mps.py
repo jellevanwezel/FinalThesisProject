@@ -5,7 +5,7 @@ from statistics import stats
 import numpy as np
 
 
-class CoefsFinder:
+class CoefsFinder(object):
 
     def __init__(self,xval='date_float', yval='mep_uit'):
         self.xval = xval

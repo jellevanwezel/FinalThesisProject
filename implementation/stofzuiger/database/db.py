@@ -8,7 +8,7 @@ from shapely import wkb
 import matplotlib.pyplot as plt
 
 
-class DB:
+class DB(object):
     script_dir = os.path.dirname(__file__)
 
     def __init__(self):

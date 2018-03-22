@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import statistics.regression as reg
 import statistics.stats as stats
 
-class KB_plotter:
+class KB_plotter(object):
 
     def __init__(self,xval='date_float'):
         self.xval = xval

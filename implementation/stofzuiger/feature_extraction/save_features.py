@@ -3,17 +3,17 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
 
-class FeatureSaver():
+class FeatureSaver(object):
 
     def __init__(self):
         self.area_feature = [
-            ['area_name','mp_id'],
-            ['Zuur', 'Zwakzuur', 'Water'],
-            ['Vrijdiep', 'Water', 'Zeerondiep', 'Ondiep', 'Diep'],
-            ['Stabiel', 'Redelijkstabiel', 'Instabiel', 'Water'],
-            ['Zandenleem', 'Water', 'Veenenzand', 'Veen', 'Kleienzand', 'Leem', 'Zand'],
-            ['pce_coating'],
-            ['pipe_lenght']
+            ['area_name','measure_point_id'],
+            ['acid_Zuur', 'acid_Zwakzuur', 'acid_Water'],
+            ['ground_water_Vrijdiep', 'ground_water_Water', 'ground_water_Zeerondiep', 'ground_water_Ondiep', 'ground_water_Diep'],
+            ['stability_Stabiel', 'stability_Redelijkstabiel', 'stability_Instabiel', 'stability_Water'],
+            ['ground_type_Zandenleem', 'ground_type_Water', 'ground_type_Veenenzand', 'ground_type_Veen', 'ground_type_Kleienzand', 'ground_type_Leem', 'ground_type_Zand'],
+            ['pce_coating_percentage'],
+            ['total_pipe_lenght']
         ]
 
     def array_to_csv(self, feature_array, file_name):

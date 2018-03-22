@@ -7,7 +7,7 @@ from interpolation.poly_cheb import PolyInterpolation
 from statistics import stats
 
 
-class KB_plotter_avg_n:
+class KB_plotter_avg_n(object):
 
     def __init__(self,xval='date_float', yval='mep_uit'):
         self.xval = xval

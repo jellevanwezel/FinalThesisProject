@@ -9,7 +9,7 @@ from statistics import stats
 
 # todo: Refactor this to use the Model
 
-class CoefsPlotter:
+class CoefsPlotter(object):
 
     def __init__(self,xval='date_float', yval='mep_uit'):
         self.xval = xval
