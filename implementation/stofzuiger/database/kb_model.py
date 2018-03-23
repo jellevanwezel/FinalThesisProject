@@ -55,11 +55,3 @@ class AreaModel(object):
             return None
         return meas_df
 
-
-# model = AreaModel(save_areas=True)
-# for area_idx in range(0,model.get_number_of_areas()):
-#    if area_idx != 0: print
-#    print model.get_area_name(area_idx) + " has " + str(model.get_number_of_mps(area_idx)) + " mps"
-#    for mp_idx in range(0,model.get_number_of_mps(area_idx)):
-#        print "mp " + str(mp_idx) + " has " + str(model.get_number_of_measurments(area_idx,mp_idx)) + " measurements"
-

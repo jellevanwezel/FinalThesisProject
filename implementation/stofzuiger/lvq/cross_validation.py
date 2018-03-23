@@ -1,10 +1,6 @@
 import sys
 from collections import defaultdict, Counter, OrderedDict
-from pprint import pprint
 
-import time
-
-import sklearn
 from sklearn.model_selection import KFold
 
 from database.kb_model import AreaModel
@@ -13,10 +9,6 @@ import glvq
 
 from feature_extraction.sliding_window import SlidingWindow
 from interpolation.poly_cheb import PolyInterpolation
-
-import matplotlib.pyplot as plt
-
-from statistics import stats
 
 
 class LOOCV:
@@ -46,27 +38,8 @@ class LOOCV:
         if omitted: logString = logString + " - omitted, has too little measurements"
         print logString
 
-    def cross_validate_per_mp(self):
-        nr_of_areas = self.area_model.get_number_of_areas()
-        plt.figure()
-        for area_idx in range(0,nr_of_areas):
-            nr_of_mps = self.area_model.get_number_of_mps(area_idx)
-            for mp_idx in range(2,nr_of_mps):
-                meas_df = self.area_model.get_mp_df(area_idx,mp_idx)
-                meas_df = self.area_model.prepare_meas_df(meas_df)
-                self._log_progress(area_idx, nr_of_areas, mp_idx,nr_of_mps,(meas_df is None))
-                if meas_df is None: continue
-                print meas_df
-                features, labels, labels_gradients = self.feature_ext.create_features_labels(meas_df)
-                if self.gradients:labels = labels_gradients
-                binned_labels, bins = self.feature_ext.bin_labels(labels,self.nr_of_bins)
-                #self.n_fold(self.nr_of_folds, features, binned_labels, self.nr_of_bins)
-
     def cross_validate_per_area(self):
         nr_of_areas = self.area_model.get_number_of_areas()
-
-
-
         for area_idx in range(0,nr_of_areas):
             print self.area_model.get_area_name(area_idx) + " " + str(area_idx + 1) + "/" + str(nr_of_areas)
             nr_of_mps = self.area_model.get_number_of_mps(area_idx)
@@ -114,12 +87,8 @@ class LOOCV:
         binned_labels, bins = self.feature_ext.bin_labels(all_labels, self.nr_of_bins)
         self.n_fold(self.nr_of_folds, all_features, binned_labels,log_pregress=True)
 
-    def _log_n_fold_progress(self,fold,nr_of_folds, start_time):
-        unit = "s"
-        time_elapsed = int(time.time() - start_time)
-        if time_elapsed > 60 : unit = "m"; time_elapsed = int(time_elapsed/60)
-        if time_elapsed > 60 : unit = "h"; time_elapsed = np.round(time_elapsed/60.,1)
-        sys.stdout.write('\rFold: ' + str(fold + 1) + "/" + str(nr_of_folds) + " in: " + str(time_elapsed) + unit)
+    def _log_n_fold_progress(self,fold,nr_of_folds):
+        sys.stdout.write('\rFold: ' + str(fold + 1) + "/" + str(nr_of_folds))
 
     def _log_n_fold_errors(self,errors):
         print " --- Errors ---"
@@ -141,9 +110,8 @@ class LOOCV:
         error_dict = Counter({}) #Counter dict, values start at 0 and can be added.
         if log_pregress:
             print " --- Progress --- "
-            start_time = time.time()
         for fold_idx, (train_idx, test_idx) in zip(range(nr_of_folds),kfold.split(features)):
-            if log_pregress: self._log_n_fold_progress(fold_idx,nr_of_folds,start_time)
+            if log_pregress: self._log_n_fold_progress(fold_idx,nr_of_folds)
             test_data, test_labels, train_data, train_labels = self.get_fold(test_idx,train_idx,features,labels)
             error_dists = self._predict_lvq(train_data,train_labels,test_data,test_labels)
             values, counts = np.unique(error_dists, return_counts=True)

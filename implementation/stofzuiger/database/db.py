@@ -131,8 +131,6 @@ class DB(object):
         query = self.getQuery('kb_pipe_roots')
         return self.do_query(query)
 
-db = DB();
-
 # roots_df = db.get_kb_pipe_segments_roots()
 # for area in roots_df.area.unique():
 #     area_pip_roots = roots_df[roots_df.area == area].pip_id.values

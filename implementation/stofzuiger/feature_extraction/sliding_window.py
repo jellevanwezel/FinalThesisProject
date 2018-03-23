@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 class SlidingWindow(object):
 
-    def __init__(self,feature_size=10,nr_of_coefs=10,nr_of_bins=6,nr_of_samples=50, omit_first_coef=False):
+    def __init__(self,feature_size=10,nr_of_coefs=10,nr_of_bins=6,nr_of_samples=50, omit_first_coef=True):
         self.nr_of_samples = nr_of_samples
         self.omit_first_coef = omit_first_coef
         self.feature_size=feature_size
@@ -15,6 +15,7 @@ class SlidingWindow(object):
         self.area_model = AreaModel()
         self.polyInt = PolyInterpolation()
 
+    # todo: refactor
     def create_features_labels(self, meas_df):
         t = np.array(meas_df['x'])
         y = np.array(meas_df['y'])
