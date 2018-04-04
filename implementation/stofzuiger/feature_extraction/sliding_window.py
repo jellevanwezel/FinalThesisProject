@@ -14,9 +14,12 @@ class SlidingWindow(object):
         self.nr_of_coefs = nr_of_coefs
         self.file_path = file_path
         self.polyInt = PolyInterpolation()
+        if file_path is not None:
+            self.sw_dict = self.load_from_file()
 
-    def create_features_labels(self, meas_df, mp_id, area_name):
-        if self.file_path is not None: return self.from_file(mp_id, area_name)
+
+    def create_features_labels(self, meas_df, area_name, mp_id):
+        if self.file_path is not None: return self.from_file(area_name, mp_id)
         x, y_hat, coefs = self.interpolate(meas_df)
         features = np.zeros([len(y_hat) - (self.feature_size + 1), self.feature_size])
         labels = np.zeros([len(y_hat) - (self.feature_size + 1)])
@@ -47,14 +50,20 @@ class SlidingWindow(object):
         return x, y_hat, coefs
 
     def from_file(self, area_name, mp_id):
-        with open(self.file_path) as data_file:
-            sw_dict = json.load(data_file)
-        area_dict = sw_dict.get(area_name)
-        mp_dict = area_dict.get(mp_id)
-        features = mp_dict.get('features')
+        area_dict = self.sw_dict.get(area_name)
+        if area_dict is None:
+            raise ValueError('Area not in file')
+        mp_dict = area_dict.get(str(mp_id))
+        if mp_dict is None:
+            raise ValueError('Measurments not in file')
+        features = np.array(mp_dict.get('features'))
         labels = mp_dict.get('labels')
-        labels_gradients = mp_dict.get('labels_gradients')
+        labels_gradients = mp_dict.get('label_gradients')
         return features, labels, labels_gradients
+
+    def load_from_file(self):
+        with open(self.file_path) as data_file:
+            return json.load(data_file)
 
     def serialize_file_name(self):
         name_parts = list()
