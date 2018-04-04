@@ -4,32 +4,31 @@ import numpy as np
 
 
 class LOOCV(object):
-
-    def __init__(self,xval='date_float', yval='mep_uit'):
+    def __init__(self, xval='date_float', yval='mep_uit'):
         self.xval = xval
         self.yval = yval
         self.area_model = AreaModel()
 
-    def _log_progress(self, area_idx, nr_of_areas, mp_idx,nr_of_mps, omitted):
+    def _log_progress(self, area_idx, nr_of_areas, mp_idx, nr_of_mps, omitted):
         area_name = self.area_model.get_area_name(area_idx)
         logString = area_name + ": " + str(area_idx + 1) + "/" + str(nr_of_areas) + ", mp: " + str(
             mp_idx + 1) + "/" + str(nr_of_mps)
         if omitted: logString = logString + " - omitted, has too little measurements"
         print logString
 
-    def save_errors(self, max_n,precision=2):
+    def save_errors(self, max_n, precision=2):
         polyInt = PolyInterpolation(precision=precision)
         nr_of_areas = self.area_model.get_number_of_areas()
         for area_idx in range(0, nr_of_areas):
             area_name = self.area_model.get_area_name(area_idx)
             nr_of_mps = self.area_model.get_number_of_mps(area_idx)
             e = np.zeros([nr_of_mps, max_n])
-            for mp_idx in range(0,nr_of_mps):
-                meas_df = self.area_model.get_mp_df(area_idx,mp_idx)
+            for mp_idx in range(0, nr_of_mps):
+                meas_df = self.area_model.get_mp_df(area_idx, mp_idx)
                 meas_df = self.area_model.prepare_meas_df(meas_df)
-                self._log_progress(area_idx, nr_of_areas, mp_idx,nr_of_mps, (meas_df is None))
+                self._log_progress(area_idx, nr_of_areas, mp_idx, nr_of_mps, (meas_df is None))
                 if meas_df is None: continue
-                for meas_idx in range(0,meas_df.shape[0]):
+                for meas_idx in range(0, meas_df.shape[0]):
                     polyInt.set_t(np.array(meas_df['x']))
                     polyInt.set_y(np.array(meas_df['y']))
                     testT = polyInt.t[meas_idx]

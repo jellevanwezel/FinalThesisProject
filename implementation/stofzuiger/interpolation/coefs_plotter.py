@@ -10,8 +10,7 @@ from statistics import stats
 # todo: Refactor this to use the Model
 
 class CoefsPlotter(object):
-
-    def __init__(self,xval='date_float', yval='mep_uit'):
+    def __init__(self, xval='date_float', yval='mep_uit'):
         self.xval = xval
         self.yval = yval
         self.rootNumber = 0
@@ -71,14 +70,14 @@ class CoefsPlotter(object):
             self.meas_df = self.prepare_meas_df(self.meas_df)
         self.show_plot()
 
-    def get_root_id(self,index):
+    def get_root_id(self, index):
         root = self.roots_df.iloc[index]
         return root['id']
 
     def get_mp_ids(self):
         return self.area_df.measurepoint_id.unique()
 
-    def get_area_name(self,index):
+    def get_area_name(self, index):
         root = self.roots_df.iloc[index]
         return root['area_name']
 
@@ -88,7 +87,7 @@ class CoefsPlotter(object):
     def get_number_of_areas(self):
         return self.roots_df.shape[0]
 
-    def prepare_meas_df(self,meas_df):
+    def prepare_meas_df(self, meas_df):
         meas_df = meas_df[[self.xval, self.yval]]
         meas_df = meas_df.dropna()
         meas_df.columns = ['x', 'y']
@@ -101,7 +100,6 @@ class CoefsPlotter(object):
             return None
         return meas_df
 
-
     def show_plot(self):
         plt.clf()
         if self.meas_df is None:
@@ -111,17 +109,18 @@ class CoefsPlotter(object):
         self.polyInt.set_t(np.array(self.meas_df['x']))
         self.polyInt.set_y(np.array(self.meas_df['y']))
         coefs = self.polyInt.find_coefs(10)
-        yHat = self.polyInt.get_y_hat_for_range(coefs,np.arange(-1,1,0.04))
-        tHat = np.arange(-1,1,0.04)
+        yHat = self.polyInt.get_y_hat_for_range(coefs, np.arange(-1, 1, 0.04))
+        tHat = np.arange(-1, 1, 0.04)
         t = self.polyInt.t
         y = self.polyInt.y
         t_sorted, y_sorted = zip(*sorted(zip(t, y), key=lambda x: x[0]))
-        plt.plot(t_sorted,y_sorted)
-        plt.plot(tHat,yHat)
+        plt.plot(t_sorted, y_sorted)
+        plt.plot(tHat, yHat)
         area_title = area_name + ": " + str(self.rootNumber + 1) + "/" + str(self.get_number_of_areas())
         mp_title = "mp: " + str(self.mpNumber + 1) + "/" + str(self.get_number_of_mps())
         plt.title(area_title + " " + mp_title)
         plt.draw()
+
 
 plotter = CoefsPlotter()
 plotter.show_plot()

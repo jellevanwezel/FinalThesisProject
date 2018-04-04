@@ -2,6 +2,7 @@ from sklearn import linear_model
 import numpy as np
 import scipy as sp
 
+
 def fit_lin(x, y):
     reg = linear_model.LinearRegression()
     reg.fit(x, y)
@@ -18,7 +19,8 @@ def fit_sin(tt, yy):
     guess_offset = np.mean(yy)
     guess = np.array([guess_amp, 2. * np.pi * guess_freq, 0., guess_offset])
 
-    def sinfunc(t, A, w, p, c):  return A * np.sin(w * t + p) + c
+    def sinfunc(t, amplitude=1, frequency=1, phase=0, center=0):
+        return amplitude * np.sin(frequency * t + phase) + center
 
     popt, pcov = sp.optimize.curve_fit(sinfunc, tt, yy, p0=guess)
     A, w, p, c = popt
@@ -26,4 +28,3 @@ def fit_sin(tt, yy):
     fitfunc = lambda t: A * np.sin(w * t + p) + c
     return {"amp": A, "omega": w, "phase": p, "offset": c, "freq": f, "period": 1. / f, "fitfunc": fitfunc,
             "maxcov": np.max(pcov), "rawres": (guess, popt, pcov)}
-

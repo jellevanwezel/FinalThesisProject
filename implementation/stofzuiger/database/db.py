@@ -82,7 +82,7 @@ class DB(object):
         query = self.getQuery('kb_differences')
         return self.do_query(query, {"root_id": root_id})
 
-    def get_kb_distances(self,root_id):
+    def get_kb_distances(self, root_id):
         """
         Gets all the measurements from a tree with given root
         :param root_id: int with the start node of the tree
@@ -92,7 +92,7 @@ class DB(object):
         query = self.getQuery('kb_distances')
         return self.do_query(query, {"root_id": root_id})
 
-    def get_kb_flens(self,root_id):
+    def get_kb_flens(self, root_id):
         """
         Gets all the measurements from a tree with given root
         :param root_id: int with the start node of the tree
@@ -101,7 +101,6 @@ class DB(object):
         """
         query = self.getQuery('kb_flens')
         return self.do_query(query, {"root_id": root_id})
-
 
     def get_kb_oodi_dd(self, root_id):
         """
@@ -123,46 +122,46 @@ class DB(object):
         return self.do_query(query)
 
     def get_kb_pipe_segments(self, roots):
-        roots_string = "("+",".join(str(root) for root in roots)+")"
+        roots_string = "(" + ",".join(str(root) for root in roots) + ")"
         query = self.getQuery("kb_pipe_segments")
-        return self.do_query( query.replace("%(root_ids)s",roots_string))
+        return self.do_query(query.replace("%(root_ids)s", roots_string))
 
     def get_kb_pipe_segments_roots(self):
         query = self.getQuery('kb_pipe_roots')
         return self.do_query(query)
 
-# roots_df = db.get_kb_pipe_segments_roots()
-# for area in roots_df.area.unique():
-#     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
-#     print area
-#     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
-#     n_roots = len(area_segments_df.root.unique())
-#     area_dict = {"coating":np.zeros([n_roots]),"length": np.zeros([n_roots])}
-#     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
-#         segment_df = area_segments_df[area_segments_df.root == root_id]
-#         bit_df = segment_df[segment_df.coating == 9]
-#         pce_df = segment_df[segment_df.coating == 10]
-#         bit_length = np.array(bit_df.length.values)
-#         pce_length = np.array(pce_df.length.values)
-#         sum_bit = np.sum(bit_length)
-#         sum_pce = np.sum(pce_length)
-#         total_length = np.sum(sum_bit) + np.sum(sum_pce)
-#         area_dict['coating'][idx] = sum_pce
-#         area_dict['length'][idx] = total_length
-#     print "mps:", len(area_dict['coating']), ", total pce:", np.sum(area_dict["coating"]) / np.sum(area_dict["length"]), ", total length:" ,  np.sum(area_dict["length"])
+        # roots_df = db.get_kb_pipe_segments_roots()
+        # for area in roots_df.area.unique():
+        #     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
+        #     print area
+        #     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
+        #     n_roots = len(area_segments_df.root.unique())
+        #     area_dict = {"coating":np.zeros([n_roots]),"length": np.zeros([n_roots])}
+        #     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
+        #         segment_df = area_segments_df[area_segments_df.root == root_id]
+        #         bit_df = segment_df[segment_df.coating == 9]
+        #         pce_df = segment_df[segment_df.coating == 10]
+        #         bit_length = np.array(bit_df.length.values)
+        #         pce_length = np.array(pce_df.length.values)
+        #         sum_bit = np.sum(bit_length)
+        #         sum_pce = np.sum(pce_length)
+        #         total_length = np.sum(sum_bit) + np.sum(sum_pce)
+        #         area_dict['coating'][idx] = sum_pce
+        #         area_dict['length'][idx] = total_length
+        #     print "mps:", len(area_dict['coating']), ", total pce:", np.sum(area_dict["coating"]) / np.sum(area_dict["length"]), ", total length:" ,  np.sum(area_dict["length"])
 
-# roots_df = db.get_kb_pipe_segments_roots()
-# for area in roots_df.area.unique():
-#     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
-#     print area
-#     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
-#     n_roots = len(area_segments_df.root.unique())
-#     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
-#         segment_df = area_segments_df[area_segments_df.root == root_id]
-#         for idx, row in segment_df.iterrows():
-#             pipe_geom_string = row['geom']
-#             if pipe_geom_string is None: continue
-#             geom = wkb.loads(pipe_geom_string,hex=True)
-#             x, y = zip(*geom.coords[:])
-#             plt.plot(x,y)
-#     plt.show()
+        # roots_df = db.get_kb_pipe_segments_roots()
+        # for area in roots_df.area.unique():
+        #     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
+        #     print area
+        #     area_segments_df = db.get_kb_pipe_segments(area_pip_roots)
+        #     n_roots = len(area_segments_df.root.unique())
+        #     for idx, root_id in zip(range(0,n_roots),area_segments_df.root.unique()):
+        #         segment_df = area_segments_df[area_segments_df.root == root_id]
+        #         for idx, row in segment_df.iterrows():
+        #             pipe_geom_string = row['geom']
+        #             if pipe_geom_string is None: continue
+        #             geom = wkb.loads(pipe_geom_string,hex=True)
+        #             x, y = zip(*geom.coords[:])
+        #             plt.plot(x,y)
+        #     plt.show()

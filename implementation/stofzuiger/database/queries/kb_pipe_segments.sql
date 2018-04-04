@@ -11,7 +11,12 @@ select search_graph.*,
 pip.measurepoint_in,
 pip.measurepoint_out,
 pip.length,
-pip.geom
+pip.geom,
+mp.id as mp_id
 from search_graph
 join kb.pipesegment pip
-  on search_graph.id = pip.id
+on search_graph.id = pip.id
+join kb.measurepointcode mpc
+on pip.measurepoint_in = mpc.id
+join kb.measurepoint mp
+on mpc.id = mp.code_id

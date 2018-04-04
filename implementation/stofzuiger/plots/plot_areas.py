@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import numpy as np
 from database.db import DB
-from feature_extraction.projections import Project
+from feature_extraction.projections import Projections
 
 
 def rescale(x,min,max):
@@ -11,7 +11,7 @@ def rescale(x,min,max):
 
 db = DB()
 roots_df = db.get_kb_pipe_segments_roots()
-proj = Project()
+proj = Projections()
 for area in roots_df.area.unique():
     area_pip_roots = roots_df[roots_df.area == area].pip_id.values
     print area
