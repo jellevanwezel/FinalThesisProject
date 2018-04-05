@@ -26,16 +26,16 @@ class SlidingWindow(object):
         labels_gradients = np.zeros([len(y_hat) - (self.feature_size + 1)])
         # length of y_hat - feature size and one for the label
         for idx in range(0, len(y_hat) - (self.feature_size + 1)):
-            features[idx, :] = y_hat[idx:idx + self.feature_size]
+            features[idx, :] = y_hat[idx:idx + self.feature_size]  # todo: check if this is correct, index
+            #features[idx, :] = [self.gradient_at_idx(x, y_hat, elem + idx) for elem in range(self.feature_size)]
             labels[idx] = y_hat[idx + self.feature_size]
-            gradient = self.gradient_at_idx(x, y_hat, idx)
+            gradient = self.gradient_at_idx(x, y_hat, idx + self.feature_size)
             labels_gradients[idx] = gradient
         return features, labels, labels_gradients
 
     def gradient_at_idx(self, x, y, idx):
-        xy_idx = idx + (self.feature_size - 1)
-        dy = y[xy_idx] - y[xy_idx + 1]
-        dx = x[xy_idx] - x[xy_idx + 1]
+        dy = y[idx] - y[idx + 1]
+        dx = x[idx] - x[idx + 1]
         return float(dy) / float(dx)  # todo:  error-rates are high, might be an error here FIX
 
     def interpolate(self, meas_df):

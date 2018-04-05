@@ -3,13 +3,13 @@ from database.area_model import AreaModel
 from feature_extraction.save_sliding_window import SaveSlidingWindow
 from feature_extraction.sliding_window import SlidingWindow
 
-sw = SlidingWindow()  # insert config here :)
+sw = SlidingWindow(nr_of_samples=20)  # insert config here :)
 
 area_model = AreaModel()
 file_name = sw.serialize_file_name()
 
 nr_of_areas = area_model.get_number_of_areas()
-for area_idx in tqdm(range(0, nr_of_areas)):
+for area_idx in tqdm(range(0, nr_of_areas), desc='Sliding Window'):
     area_name = area_model.get_area_name(area_idx)
     for mp_idx, mp_id in enumerate(area_model.get_mp_ids(area_idx)):
         meas_df = area_model.get_mp_df(area_idx, mp_idx)

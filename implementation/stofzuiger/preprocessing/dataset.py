@@ -4,6 +4,7 @@ from database.area_model import AreaModel
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
+import logging as log
 
 from feature_extraction.feature_map import FeatureLabels
 from feature_extraction.sliding_window import SlidingWindow
@@ -27,13 +28,15 @@ class Dataset(object):
 
         df = DataFrame(columns=c_names)
 
-        print '--- Extracting Static Features ---\n'
+        log.info('Extracting Static Features')
+
         sf = static_features.extract_static_features()
         sf_dict = static_features.extract_static_features_to_dict(sf)
 
-        print '--- Extracting Sliding Window ---\n'
+        log.info('Extracting Sliding Window')
+
         nr_of_areas = self.area_model.get_number_of_areas()
-        for area_idx in tqdm(range(0, nr_of_areas)):
+        for area_idx in tqdm(range(0, nr_of_areas), desc='Areas'):
             area_name = self.area_model.get_area_name(area_idx)
             # print area_name, str(area_idx + 1) + '/' + str(self.area_model.get_number_of_areas())
             for mp_idx, mp_id in enumerate(self.area_model.get_mp_ids(area_idx)):
@@ -94,10 +97,10 @@ class Dataset(object):
         return binned_labels, bins
 
 
-sw_file = '../feature_extraction/data/sliding_window/50_1_10_10.json'
+sw_file = '../feature_extraction/data/sliding_window/20_1_10_10.json'
 sw = SlidingWindow(file_path=sw_file)
 sf_file = '../feature_extraction/data/static_features.csv'
 sf = StaticFeatures(file_path=sf_file)
 ds = Dataset()
-df = ds.generate_dataset(sw, sf, n_label_bins=10)
-df.to_csv(path_or_buf='./data.csv')
+df = ds.generate_dataset(sw, sf, n_label_bins=20)
+df.to_csv(path_or_buf='./data.csv', index=False)
