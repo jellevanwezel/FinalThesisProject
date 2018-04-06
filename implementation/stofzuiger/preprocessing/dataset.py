@@ -16,7 +16,14 @@ class Dataset(object):
         self.area_model = AreaModel()
 
     def generate_dataset(self, sliding_window, static_features, n_label_bins=10):
-
+        """
+        Concatinates the sliding window and the static features and bins the labels.
+        :param sliding_window: Sliding window object
+        :param static_features: Static features object
+        :param n_label_bins: number of bins to be used
+        :return: the Dataset as a DataFrame
+        :rtype: pandas.DataFrame
+        """
         id_names = ['area_id', 'measure_point_id']
         sw_names = self.get_sliding_window_names(sliding_window.feature_size)
         static_names = self.get_static_names()
@@ -25,8 +32,6 @@ class Dataset(object):
         data_dict = dict()
         for c_name in c_names:
             data_dict[c_name] = []
-
-        df = DataFrame(columns=c_names)
 
         log.info('Extracting Static Features')
 
@@ -70,6 +75,7 @@ class Dataset(object):
 
     # todo: sliding window should return this
     def get_sliding_window_names(self, sw_size):
+        """Generates the column names for the sliding window"""
         names = []
         for i in range(0, sw_size):
             names.append('sw_' + str(i))
@@ -77,6 +83,7 @@ class Dataset(object):
 
     # todo: static features should return this
     def get_static_names(self):
+        """Generates the column names for the static features"""
         names = []
         groups = [FeatureLabels.acid,
                   FeatureLabels.ground_water,
@@ -90,6 +97,7 @@ class Dataset(object):
         return names
 
     def bin_labels(self, labels, nr_of_bins):
+        """Bins the labels to the given nr_of_bins"""
         labels = np.round(labels)
         bin_size = np.abs(np.min(labels) - np.max(labels)) / float(nr_of_bins)
         bins = np.arange(int(np.min(labels)) + bin_size, int(np.max(labels)), bin_size)

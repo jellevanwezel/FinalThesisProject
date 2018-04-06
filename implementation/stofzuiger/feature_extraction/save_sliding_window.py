@@ -5,6 +5,16 @@ import os
 class SaveSlidingWindow(object):
     @staticmethod
     def features_to_json(features, labels_points, labels_gradients, area_name, mp_id, file_name):
+        """
+        Saves the sliding window to a json file
+        :param features: the features values from the sliding window
+        :param labels_points: the true label points
+        :param labels_gradients: the gradient to the label points
+        :param area_name: the name of the area
+        :param mp_id: the id of the measure point
+        :param file_name: the desired file name
+        :return:
+        """
         filepath = os.path.dirname(os.path.abspath(__file__))
         data = {
             'features': features.tolist(),

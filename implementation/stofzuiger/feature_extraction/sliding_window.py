@@ -17,8 +17,16 @@ class SlidingWindow(object):
         if file_path is not None:
             self.sw_dict = self.load_from_file()
 
-
     def create_features_labels(self, meas_df, area_name, mp_id):
+        """
+        Creates a features and labels for this measure point
+        It interpolates the measure point data and applies a sliding window
+        :param meas_df: measurement DataFrame
+        :param area_name: name of the area the measurepoint is in
+        :param mp_id: measure point id
+        :return: the features and its corresponding labels
+        :rtype: numpy.array, numpy.array, numpy.array
+        """
         if self.file_path is not None: return self.from_file(area_name, mp_id)
         x, y_hat, coefs = self.interpolate(meas_df)
         features = np.zeros([len(y_hat) - (self.feature_size + 1), self.feature_size])
@@ -27,18 +35,32 @@ class SlidingWindow(object):
         # length of y_hat - feature size and one for the label
         for idx in range(0, len(y_hat) - (self.feature_size + 1)):
             features[idx, :] = y_hat[idx:idx + self.feature_size]  # todo: check if this is correct, index
-            #features[idx, :] = [self.gradient_at_idx(x, y_hat, elem + idx) for elem in range(self.feature_size)]
+            # features[idx, :] = [self.gradient_at_idx(x, y_hat, elem + idx) for elem in range(self.feature_size)]
             labels[idx] = y_hat[idx + self.feature_size]
             gradient = self.gradient_at_idx(x, y_hat, idx + self.feature_size)
             labels_gradients[idx] = gradient
         return features, labels, labels_gradients
 
     def gradient_at_idx(self, x, y, idx):
+        """
+        Gets the gradient between idx and idx + 1
+        :param x: list with x values
+        :param y:  list with y values
+        :param idx: the index at which the gradient needs to be calculated
+        :return: the gradient
+        :rtype: float
+        """
         dy = y[idx] - y[idx + 1]
         dx = x[idx] - x[idx + 1]
         return float(dy) / float(dx)  # todo:  error-rates are high, might be an error here FIX
 
     def interpolate(self, meas_df):
+        """
+        Interpolates the measurements to give approximated but consistent measurements
+        :param meas_df: the measurement DataFrame
+        :return: the x values, the approximated y values and the found coefficients
+        :rtype: numpy.array, numpy.array, numpy.array
+        """
         t = np.array(meas_df['x'])
         y = np.array(meas_df['y'])
         self.polyInt.set_t_y(t, y)
@@ -50,6 +72,13 @@ class SlidingWindow(object):
         return x, y_hat, coefs
 
     def from_file(self, area_name, mp_id):
+        """
+        Loads the features and labels from a file, all further params and calculations are ignored.
+        :param area_name: name of the area
+        :param mp_id: id of the measurement point
+        :return: the features and its corresponding labels
+        :rtype: numpy.array, numpy.array, numpy.array
+        """
         area_dict = self.sw_dict.get(area_name)
         if area_dict is None:
             raise ValueError('Area not in file')
@@ -62,6 +91,10 @@ class SlidingWindow(object):
         return features, labels, labels_gradients
 
     def load_from_file(self):
+        """
+        loads the json file to a dictionary
+        :return:
+        """
         with open(self.file_path) as data_file:
             return json.load(data_file)
 

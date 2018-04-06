@@ -5,6 +5,7 @@ import os
 
 
 class SaveStaticFeatures(object):
+    # the feature names grouped
     area_feature_header = [
         ['area_name', 'measure_point_id'],
         ['acid_Zuur', 'acid_Zwakzuur', 'acid_Water'],
@@ -18,7 +19,13 @@ class SaveStaticFeatures(object):
     ]
 
     @staticmethod
-    def array_to_csv(feature_array, file_name):
+    def array_to_csv(feature_array, file_name):  # todo: to json
+        """
+        Saves the static features to a csv file
+        :param feature_array: the list with the static features
+        :param file_name: the desired filename
+        :return:
+        """
         filepath = os.path.dirname(os.path.abspath(__file__))
         name_path = filepath + '/data/' + file_name + '.csv'
         write_mode = 'r+' if os.path.exists(name_path) else 'w'
@@ -31,6 +38,11 @@ class SaveStaticFeatures(object):
 
     @staticmethod
     def area_features_header_to_string():
+        """
+        Creates the header string for the csv
+        :return: the header string
+        :rtype: str
+        """
         out_arr = []
         for val in SaveStaticFeatures.area_feature_header:
             out_arr.append(",".join(val))

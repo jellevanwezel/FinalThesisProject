@@ -12,9 +12,15 @@ class CrossValidateLvq(object):
         self.n_bins = n_bins
         self.n_folds = n_folds
         self.lvq_model = lvq_model
-        self.conv_matrix = np.zeros((n_bins, n_bins))
+        self.conf_matrix = np.zeros((n_bins, n_bins))
 
     def split(self, df):
+        """
+        Creates splits from the given DataFrame grouped by the measurement point
+        :param df: The dataFrame with the features and labels
+        :return: list of dictionaries with the splits
+        :rtype: list
+        """
         data_splits = []
         for _ in range(self.n_folds):
             data_splits.append({
@@ -38,12 +44,28 @@ class CrossValidateLvq(object):
         return data_splits
 
     def predict_lvq(self, train_data, train_labels, test_data, test_labels, lvq_model):
+        """
+        Trains a lvq model on the train data and tests on the test data.
+        :param train_data:
+        :param train_labels:
+        :param test_data:
+        :param test_labels:
+        :param lvq_model:
+        :return: The confusion matrix
+        """
         lvq_model.fit(train_data, train_labels)
         pred_labels = lvq_model.predict(test_data)
         for p_idx, t_idx in zip(pred_labels, test_labels):
-            self.conv_matrix[p_idx, t_idx] += 1
+            self.conf_matrix[p_idx, t_idx] += 1
 
     def cross_validate(self, data_df, gradient=False):
+        """
+        Cross validates the lvq model with the given dataset.
+        :param data_df:
+        :param gradient: wether or not the gradient should be used as label
+        :return: the confusion matrix
+        :rtype: numpy.array
+        """
         label_idx = 3 if gradient else 2  # todo: magic number fix
         data_splits = self.split(data_df)
         for fold_dict in tqdm(data_splits, desc='Validating'):
@@ -52,28 +74,31 @@ class CrossValidateLvq(object):
             train_labels = fold_dict['train_labels'].iloc[:, label_idx]
             test_labels = fold_dict['test_labels'].iloc[:, label_idx]
             self.predict_lvq(train_data, train_labels, test_data, test_labels, self.lvq_model)
-        return np.round(self.conv_matrix / self.n_folds, 1)
+        return np.round(self.conf_matrix / self.n_folds, 1)
 
     def print_conv_matrix(self):
+        """
+        Prints the confusion matrix
+        """
         labels = map(str, range(self.n_bins))
-        spacing = len(str(np.max(self.conv_matrix.astype(int))))
+        spacing = len(str(np.max(self.conf_matrix.astype(int))))
         space_str = '%0' + str(spacing) + 's'
         top_spaces = ''.join([' '] * spacing)
         print '  ' + top_spaces + top_spaces.join(labels)
-        for row_label, row in zip(labels, self.conv_matrix):
+        for row_label, row in zip(labels, self.conf_matrix):
             print '%s |%s|' % (row_label, ' '.join(space_str % int(np.ceil(i)) for i in row))
 
 
 splits = 2
 df = pd.read_csv(filepath_or_buffer='../preprocessing/data_40_to_10.csv')
-n_bins = df.iloc[:, -2].unique().shape[0]
+n_bins = df.iloc[:, -2].unique().shape[0] #number of unique labels (bins)
 model = glvq.LgmlvqModel(prototypes_per_class=1)
 cv_lvq = CrossValidateLvq(n_bins, splits, model)
 cv_lvq.cross_validate(df, gradient=False)
 
 print
 cv_lvq.print_conv_matrix()
-tp = np.sum(cv_lvq.conv_matrix.diagonal())
-tot = np.sum(np.sum(cv_lvq.conv_matrix))
+tp = np.sum(cv_lvq.conf_matrix.diagonal())
+tot = np.sum(np.sum(cv_lvq.conf_matrix))
 print
 print tp / float(tot)

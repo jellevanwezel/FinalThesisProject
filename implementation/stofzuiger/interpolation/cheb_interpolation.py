@@ -3,7 +3,6 @@ from interpolation.cheb_store import ChebStore
 from statistics.stats import Stats
 
 
-# maybe this whole class can be static
 class ChebInterpolation(object):
     file_name = 'chebs.json'
 
@@ -11,6 +10,7 @@ class ChebInterpolation(object):
         self.cheb_store = ChebStore(ChebInterpolation.file_name)
 
     def cheb(self, n, x):
+        """Recursive Chebishev function (See paper)"""
         if n == 0:
             return 1.  # first defenition
         if n == 1:
@@ -22,6 +22,7 @@ class ChebInterpolation(object):
         return cheb
 
     def find_coefs(self, n, t, y):
+        """Gets the coefs for this time series"""
         t, y = ChebInterpolation.prepaire_t_y(t, y)
         coefs = np.empty([n + 1])
         for k in range(0, n + 1):
@@ -34,6 +35,7 @@ class ChebInterpolation(object):
         return coefs
 
     def get_y_hat_range(self, coefs, t=np.arange(-1, 1.1, 0.1)):
+        """Gets the approximated functions for an range x"""
         t_original = t
         if np.min(t) < -1 or np.max(t) > 1:
             t = Stats.rescale(t, -1, 1)
@@ -43,6 +45,7 @@ class ChebInterpolation(object):
         return np.array(y_hat), t_original
 
     def get_y_hat(self, coefs, t):
+        """Calculates a singe aproximated value of y"""
         cheb_sum = 0.0
         for k in range(0, len(coefs)):
             cheb_sum += coefs[k] * self.cheb(k, np.round(t, 3))
@@ -50,4 +53,5 @@ class ChebInterpolation(object):
 
     @staticmethod
     def prepaire_t_y(self, t, y):
+        """Sorts and rescales t"""
         return zip(*sorted(zip(Stats.rescale(t, -1, 1), y)))
