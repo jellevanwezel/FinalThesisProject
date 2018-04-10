@@ -66,7 +66,7 @@ class CrossValidateLvq(object):
         :return: the confusion matrix
         :rtype: numpy.array
         """
-        label_idx = 3 if gradient else 2  # todo: magic number fix
+        label_idx = 3 if gradient else 2  # todo: magic number fix, use column name
         data_splits = self.split(data_df)
         for fold_dict in tqdm(data_splits, desc='Validating'):
             train_data = fold_dict['train_data']
@@ -89,16 +89,4 @@ class CrossValidateLvq(object):
             print '%s |%s|' % (row_label, ' '.join(space_str % int(np.ceil(i)) for i in row))
 
 
-splits = 2
-df = pd.read_csv(filepath_or_buffer='../preprocessing/data_40_to_10.csv')
-n_bins = df.iloc[:, -2].unique().shape[0] #number of unique labels (bins)
-model = glvq.LgmlvqModel(prototypes_per_class=1)
-cv_lvq = CrossValidateLvq(n_bins, splits, model)
-cv_lvq.cross_validate(df, gradient=False)
 
-print
-cv_lvq.print_conv_matrix()
-tp = np.sum(cv_lvq.conf_matrix.diagonal())
-tot = np.sum(np.sum(cv_lvq.conf_matrix))
-print
-print tp / float(tot)

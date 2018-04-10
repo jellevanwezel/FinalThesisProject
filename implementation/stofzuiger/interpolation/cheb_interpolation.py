@@ -23,7 +23,7 @@ class ChebInterpolation(object):
 
     def find_coefs(self, n, t, y):
         """Gets the coefs for this time series"""
-        t, y = ChebInterpolation.prepaire_t_y(t, y)
+        t, y = ChebInterpolation.prepare_t_y(t, y)
         coefs = np.empty([n + 1])
         for k in range(0, n + 1):
             cheb_sum = 0.0
@@ -52,6 +52,6 @@ class ChebInterpolation(object):
         return cheb_sum
 
     @staticmethod
-    def prepaire_t_y(self, t, y):
+    def prepare_t_y(self, t, y):
         """Sorts and rescales t"""
         return zip(*sorted(zip(Stats.rescale(t, -1, 1), y)))

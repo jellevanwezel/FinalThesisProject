@@ -25,7 +25,7 @@ class Dataset(object):
         :rtype: pandas.DataFrame
         """
         id_names = ['area_id', 'measure_point_id']
-        sw_names = self.get_sliding_window_names(sliding_window.feature_size)
+        sw_names = self.get_sliding_window_names(sliding_window.window_size)
         static_names = self.get_static_names()
         label_names = ['point_label', 'gradient_label']
         c_names = id_names + sw_names + static_names + label_names
@@ -65,13 +65,21 @@ class Dataset(object):
                         # row_dict = dict(zip(c_names, f_row))
                         # df = df.append(row_dict, ignore_index=True)
 
-        binned_points, _ = self.bin_labels(data_dict['point_label'], n_label_bins)
+        binned_points, bins = self.bin_labels(data_dict['point_label'], n_label_bins)
         binned_gradients, _ = self.bin_labels(data_dict['gradient_label'], n_label_bins)
         data_dict['binned_points'] = binned_points
         data_dict['binned_gradients'] = binned_gradients
+        mid_points = self.calc_mid_point(bins, data_dict['point_label'])
         df = pd.DataFrame.from_dict(data_dict)
         df = df.reindex(c_names + ['binned_points', 'binned_gradients'], axis=1)
-        return df
+        return df, mid_points
+
+    def calc_mid_point(self, bins, labels):
+        mid_points = list()
+        for index, bin in enumerate(bins):
+            prev_bin = np.min(labels) if index == 0 else bins[index - 1]
+            mid_points.append(((bin - prev_bin) / 2.0) + prev_bin)
+        return mid_points
 
     # todo: sliding window should return this
     def get_sliding_window_names(self, sw_size):
@@ -104,11 +112,24 @@ class Dataset(object):
         binned_labels = np.digitize(labels, bins)
         return binned_labels, bins
 
+    def rescale_labels(self, df, cut_left, cut_right):
+        n_bins = len(np.unique(df.binned_points))
+        largest_label = np.unique(df.binned_points)[-1]
+        n_bins = n_bins if largest_label == n_bins - 1 else largest_label + 1
+        #  check if some labels were skipped
+        cut_left = cut_left - 1 if cut_left > 0 else 0
+        cut_right = cut_right - 1 if cut_right > 0 else 0
+        df.loc[df.binned_points < cut_left, 'binned_points'] = cut_left
+        df.loc[df.binned_points > n_bins - cut_right - 1, 'binned_points'] = n_bins - cut_right - 1
+        df.loc[:, 'binned_points'] = df.loc[:, 'binned_points'] - cut_left
+        return df
 
-sw_file = '../feature_extraction/data/sliding_window/20_1_10_10.json'
-sw = SlidingWindow(file_path=sw_file)
-sf_file = '../feature_extraction/data/static_features.csv'
-sf = StaticFeatures(file_path=sf_file)
-ds = Dataset()
-df = ds.generate_dataset(sw, sf, n_label_bins=20)
-df.to_csv(path_or_buf='./data.csv', index=False)
+
+# sw_file = '../feature_extraction/data/sliding_window/20_1_10_10.json'
+# sw = SlidingWindow(file_path=sw_file)
+# sf_file = '../feature_extraction/data/static_features.csv'
+# sf = StaticFeatures(file_path=sf_file)
+# ds = Dataset()
+# df = ds.generate_dataset(sw, sf, n_label_bins=20)
+# df = ds.reshape_dataset(df, 3, 9)
+# df.to_csv(path_or_buf='./data.csv', index=False)

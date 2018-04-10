@@ -3,7 +3,7 @@ from database.area_model import AreaModel
 from feature_extraction.save_sliding_window import SaveSlidingWindow
 from feature_extraction.sliding_window import SlidingWindow
 
-sw = SlidingWindow(nr_of_samples=20)  # insert config here :)
+sw = SlidingWindow(nr_of_samples=50, omit_first_coef=False)  # insert config here :)
 
 area_model = AreaModel()
 file_name = sw.serialize_file_name()

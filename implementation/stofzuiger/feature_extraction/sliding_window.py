@@ -1,16 +1,14 @@
 import json
-
 import numpy as np
-from __builtin__ import file
 
 from interpolation.poly_cheb import PolyInterpolation
 
 
 class SlidingWindow(object):
-    def __init__(self, feature_size=10, nr_of_coefs=10, nr_of_samples=50, omit_first_coef=True, file_path=None):
+    def __init__(self, window_size=10, nr_of_coefs=10, nr_of_samples=25, omit_first_coef=True, file_path=None):
         self.nr_of_samples = nr_of_samples
         self.omit_first_coef = omit_first_coef
-        self.feature_size = feature_size
+        self.window_size = window_size
         self.nr_of_coefs = nr_of_coefs
         self.file_path = file_path
         self.polyInt = PolyInterpolation()
@@ -29,15 +27,13 @@ class SlidingWindow(object):
         """
         if self.file_path is not None: return self.from_file(area_name, mp_id)
         x, y_hat, coefs = self.interpolate(meas_df)
-        features = np.zeros([len(y_hat) - (self.feature_size + 1), self.feature_size])
-        labels = np.zeros([len(y_hat) - (self.feature_size + 1)])
-        labels_gradients = np.zeros([len(y_hat) - (self.feature_size + 1)])
-        # length of y_hat - feature size and one for the label
-        for idx in range(0, len(y_hat) - (self.feature_size + 1)):
-            features[idx, :] = y_hat[idx:idx + self.feature_size]  # todo: check if this is correct, index
-            # features[idx, :] = [self.gradient_at_idx(x, y_hat, elem + idx) for elem in range(self.feature_size)]
-            labels[idx] = y_hat[idx + self.feature_size]
-            gradient = self.gradient_at_idx(x, y_hat, idx + self.feature_size)
+        features = np.zeros([len(y_hat) - (self.window_size + 1), self.window_size])
+        labels = np.zeros([len(y_hat) - (self.window_size + 1)])
+        labels_gradients = np.zeros([len(y_hat) - (self.window_size + 1)])
+        for idx in range(0, len(y_hat) - (self.window_size + 1)):
+            features[idx, :] = y_hat[idx:idx + self.window_size]  # todo: check if this is correct, index
+            labels[idx] = y_hat[idx + self.window_size]
+            gradient = self.gradient_at_idx(x, y_hat, idx + self.window_size)
             labels_gradients[idx] = gradient
         return features, labels, labels_gradients
 
@@ -52,7 +48,7 @@ class SlidingWindow(object):
         """
         dy = y[idx] - y[idx + 1]
         dx = x[idx] - x[idx + 1]
-        return float(dy) / float(dx)  # todo:  error-rates are high, might be an error here FIX
+        return float(dy) / float(dx)  # todo: error is high because data is lost, check.
 
     def interpolate(self, meas_df):
         """
@@ -65,10 +61,13 @@ class SlidingWindow(object):
         y = np.array(meas_df['y'])
         self.polyInt.set_t_y(t, y)
         coefs = self.polyInt.find_coefs(self.nr_of_coefs)
-        if self.omit_first_coef: coefs[0] = 0
+        first_coef = coefs[0]
+        if self.omit_first_coef:
+            coefs[0] = 0
         x = np.arange(-1, 1, (2. / self.nr_of_samples))  # -1 and 1 because the chebs method
         y_hat = self.polyInt.get_y_hat_for_range(coefs, x)
         self.polyInt.save_chebs_to_file()  # save chebs to file for future use
+        coefs[0] = first_coef
         return x, y_hat, coefs
 
     def from_file(self, area_name, mp_id):
@@ -102,6 +101,6 @@ class SlidingWindow(object):
         name_parts = list()
         name_parts.append(self.nr_of_samples)
         name_parts.append(int(self.omit_first_coef))
-        name_parts.append(self.feature_size)
+        name_parts.append(self.window_size)
         name_parts.append(self.nr_of_coefs)
         return '_'.join(map(str, name_parts))

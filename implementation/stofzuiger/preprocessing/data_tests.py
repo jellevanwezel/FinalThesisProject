@@ -59,6 +59,12 @@ def bins_40():
     print np.min(df.binned_points), np.max(df.binned_points)
     df.to_csv(path_or_buf='data_40_to_10.csv', index=False)
 
+def reshape_dataset(df, cut_left, cut_right):
+    n_bins = len(np.unique(df.binned_points))
+    df.loc[df.binned_points > cut_left, 'binned_points'] = cut_left
+    df.loc[df.binned_points > n_bins - cut_right, 'binned_points'] = n_bins - cut_right
+    df.loc[:, 'binned_points'] = df.loc[:, 'binned_points'] - cut_left
+    return df
 
 
 bins_40()
