@@ -2,23 +2,101 @@
 
 \chapter{Introduction}\label{ch:introduction}
 
-\section{Problem description}
+\section{History of natural gas in The Netherlands}
 
-% something about the Netherlands having used and has been relient on gas for the last ... years, find source
+% Inleiding
 
-% tell something about the gas numbers from energy trends
+%---------
 
-% tell why gass is important
+% Geschiedenis
 
-% tell that gas is a fosil fuel and thus is not a permanent solution to the energy consumption problem.
+% stukje geschiedenis over gas in Groningen bel en Nederland.
 
-% however time and effort has been put into putting steel gas pipes into the ground in the Netherlands
+%"De Nederlandse Aardolie Maatschappij heeft in haar exploratieboring bij Slochteren aardgas aangetroffen. Er zullen productieproeven worden genomen."
+% Het Vrije Volk van 5 augustus 1959
 
-% also in maintaining these pipes.
+% https://en.wikipedia.org/wiki/Groningen_gas_field
+% Dutch disease
+% https://en.wikipedia.org/wiki/Dutch_disease
+
+% De huidige afhankelijkheid van gas: zie energie trends.
+% Aardbevingen in groningen en protest tegen gas
+% Aardbevingen laten zien: https://nl.wikipedia.org/wiki/Aardgasveld_van_Slochteren
+% Klimaat problemen met de gas consumptie
+
+% Regering wil over ~30 jaar van het gas af (vind source) (Parijs?)
+% Dus huidige invrastructuur ligt er nog 30 jaar 
+% Duur om te vervangen
+% Hoe lang kunnen de leidingen blijven liggen, centrale vraag
+
+%-----------
+
+% stukje over voor wie we dit gaan doen.
+
+% RUG
+% Cogas
+% valueA
+
+%-----------
+
+% Cathodic protection <-- eigen hoofdstuk
+
+% Meetingen, en data grootte (wanneer was eerste meeting)
+
+%----------
+
+% Related work
+
+%----------
+
+% hypothese: wordt moeilijk om iets te zeggen over de lange termijn want er is weinig weinig data.
+
+
+In 1959 on of the worlds largest natural gas deposit was found in Slochteren, The Netherlands \cite{nam-2014}. It was discovered by the "Nederlandse Aardolie maatschapij" (NAM)  which translates to: the Dutch oil Company. This company was founded by Shell and Esso in 1947 \cite{oprichting-nam} in order to find natural energy resources in the Dutch soil. The discovery of the natural gas deposit was kept with a low profile at first because Dutch law at that time \cite{mijnwet} did not give ownership of an natural occurring resource to its discoverer but to the state. After a follow up exploratory drilling near Delfzijl \todo{source} showed the size of the natural gas deposit \todo{how big} The NAM filed for the drilling rights with the Dutch Government for the Groningen area. 
+
+Then in 1962 the Dutch government passed the natural gas bill \todo{cite}. It created a partnership between the Dutch state, Shell and Esso. The Dutch state would get a share of 50\%, Shell and Esso would both get a share of 25\%. The bill also founded the `Nederlandse Gasuni' (the Dutch union for natural gas). This union would be responsible for distributing the natural gas from the Slochteren field across the Netherlands. At that time there were local gas companies \todo{source} producing and distributing light gas distilled from coal. These companies would now distribute the Slochteren gas with their existing distribution network rather than produce their own.
+
+In less than ten years most Dutch households would be connected with the gas network. The Netherlands would cook and be warmed by the Natural gas from Slochteren for foreseeable future. \todo{cite journaal wiki} The natural gas from Slochteren brought economical prosperity to The Netherlands in the second part of the 20th century. However there were also downsides. So much so that an economical term is named after it: `Dutch disease'. \todo{cite} This term is used when a nations products become expensive due to a strong currency, which is fueled by a newly discovered natural resource. Expensive exports causes a nations production to decrease and unemployment rates to rise.
+
+\section{Current situation and future}
+
+80 percent of the natural gas is thought to be extracted and at the current rate of extraction it is predicted that the gas will last for at-least another ten years. The gas is providing the Netherlands with warm homes and meals however the `mijnwet' gave ownership of the natural gas to the state. This meant that the revenues went the The Netherlands as a whole and not to directly to the regionals living directly on the gas field. Due to the extraction of the gas from the lower layers of the Earth, the upper layers start to shift with earthquakes as result. Because earthquakes are not common in The Netherlands, structures are not build to withstand their impact. This causes the houses of the residents directly above and near the gas field show signs of damages and sometimes become uninhabitable.
+
+Without any direct benefit from the gas field but with their homes collapsing the people of Groningen started to oppose the extraction of the gas form the Slochteren field. Multiple protest groups have been formed over the years and not without success. The extraction of the natural gas will be limited from.. to .. a year. There have been made promises by the Dutch government to compromise the owners of damaged homes, however this is still to be implemented.
+
+The earthquakes are not the only incentive for The Netherlands to stop extracting the gas. The Dutch government signed the Paris agreement in \todo{when}. The Paris agreement is a climate accord in which \todo{number of nations} made promises to reduce their carbon emissions in order to slow the global rising temperature. One of the promises The Netherlands made was to reduce the carbon emissions by ... percent. The Dutch government has stated that it wants to reduce the dependency on gas and start using other forms of energy instead. 
+
+A third reason to reduce the dependency on gas is when the gas eventually runs out, the Netherlands will have to rely on importing gas from foreign nations such as Russia. Which can have undesirable consequences since Russia has been known to use their gas supplies as diplomatic leverage \todo{find source}.
+
+For these three reasons The Netherlands is moving away from fossil fuels and transitioning to sustainable energy sources like wind and solar power. The transition to `green' energy will take time. The energy infrastructure needs to be able to handle a bigger dependency on electricity and facilities need to be build to produce the electricity. During this time the current gas infrastructure will still be in use.
+
+
+The gas infrastructure or transition systems in The Netherlands are hold by operator companies (TSOs). There are seven TSOs in The Netherlands facilitating the 7.6 \todo{energie trends} million Dutch households. These TSOs maintain and expand their infrastructure. 
+
+Replacing broken pipe infrastructure is a large expenditure for the TSOs, in 2014 together the TSOs spend 679 billion euro \todo{source energy trends} in replacing and maintaining the current transition systems. Over 84 percent of this was spent on replacing pipeline infrastructure. Table \ref{tab:damages-pipelines} shows what the main causes are for pipeline malfunctions. The largest contributer is the aging of the pipelines. 
+
+\begin{table}
+\begin{tabular}{ r | l | r}
+  30 & Aging & For example oxidation\\
+  21 & Excavation damage & \\
+  16 & Soil movement & \\
+  12 & Construction fault &\\
+  11 & Unknown & \\
+  5 & Point load & Tree roots\\
+  5 & Other & \\
+\end{tabular}
+\caption{Types of damages on gas pipelines in The Netherlands \todo{energy trends}}
+\label{tab:damages-pipelines}
+\end{table}
+
+Coteq is one of these TSOs. It is located in and around Almelo city. In 2015 it had around 140 thousand gas connections. \todo{energy trends} One of the questions Coteq has is how long the current gas pipe network can be sustained without replacing large parts of it. In this thesis we will try to answer this question.
+
+
+\section{Related work}
 
 
 
-Steel gas-pipes are placed in the ground where they form corrosion. The amount of formed corrosion is thought to be depending on multiple environment factors. For example, the composition of the soil, the ground water level, and the depth the pipes are placed. In order to prevent the formation of corrosion on the pipes a method called cathodic protection is applied. Cathodic protection uses an electrical system where anodes (metal rods) are placed in the ground near the cathode (the steel pipes). When current is introduced to the system corrosion forms on the anodes and not on the cathode. 
+Steel gas-pipes are placed in the ground where they form corrosion. The amount of formed corrosion is thought to be depending on multiple environment factors. For example, the composition of the soil, the ground water level, and the depth the pipes are placed. In order to prevent the formation of corrosion on the pipes a method called cathodic protection is applied. Cathodic protection uses an electrical system where an anode (metal) is placed in the ground near the cathode (the steel pipes). When current is introduced to the system corrosion forms on the anode and not on the cathode. This method is not only applied in the gas industry but also in the shipping sector, where it is used to protect boats from corroding. 
 
 This method is applied on multiple pipe-lines by an energy company called `Cogas' which is located in Almelo. They have collected the environment factors by hand and know how much current is needed per pipe section. Because of the corrosion buildup over time on the anodes and the pipes, at some point in time the amount of current needed exceeds a threshold. At this point it is no longer possible or economically viable to produce the amount of current needed to prevent the corrosion. When this happens more anodes need to be placed or the steel pipes have to be replaced. Cogas wants to be able to predict when this will happen based on their collected data.
 

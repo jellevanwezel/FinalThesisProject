@@ -36,47 +36,54 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: thesis-blx.bib
 Database file #2: Bibliography.bib
+Warning--I didn't find a database entry for "knuth:1974"
+Warning--I didn't find a database entry for "kohonen"
+Warning--I didn't find a database entry for "LVQ"
+Warning--I didn't find a database entry for "GLVQ"
+Warning--I didn't find a database entry for "GMLVQ"
+Warning--I didn't find a database entry for "Schneider"
 Biblatex version: 3.3
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-You've used 2 entries,
+You've used 4 entries,
             6047 wiz_defined-function locations,
-            1158 strings with 8774 characters,
-and the built_in function-call counts, 4899 in all, are:
-= -- 257
-> -- 162
-< -- 48
-+ -- 80
-- -- 48
-* -- 229
-:= -- 477
+            1174 strings with 9118 characters,
+and the built_in function-call counts, 8086 in all, are:
+= -- 286
+> -- 218
+< -- 69
++ -- 75
+- -- 80
+* -- 415
+:= -- 610
 add.period$ -- 0
-call.type$ -- 2
-change.case$ -- 1
+call.type$ -- 4
+change.case$ -- 3
 chr.to.int$ -- 34
-cite$ -- 2
-duplicate$ -- 415
-empty$ -- 465
-format.name$ -- 50
-if$ -- 1132
+cite$ -- 6
+duplicate$ -- 860
+empty$ -- 953
+format.name$ -- 97
+if$ -- 1866
 int.to.chr$ -- 0
-int.to.str$ -- 4
+int.to.str$ -- 6
 missing$ -- 0
-newline$ -- 47
-num.names$ -- 71
-pop$ -- 352
+newline$ -- 72
+num.names$ -- 88
+pop$ -- 1001
 preamble$ -- 1
-purify$ -- 37
+purify$ -- 27
 quote$ -- 0
-skip$ -- 344
+skip$ -- 498
 stack$ -- 0
-substring$ -- 280
-swap$ -- 142
-text.length$ -- 39
-text.prefix$ -- 1
+substring$ -- 177
+swap$ -- 262
+text.length$ -- 80
+text.prefix$ -- 3
 top$ -- 1
-type$ -- 64
+type$ -- 140
 warning$ -- 0
-while$ -- 70
+while$ -- 87
 width$ -- 0
-write$ -- 44
+write$ -- 67
+(There were 6 warnings)

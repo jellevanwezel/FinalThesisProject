@@ -11,7 +11,7 @@
 
 % 	Coating
 
-% 	Ground
+% 	Ground  Projections Amesfoort en intersections
 
 %	Pipe Length
 
@@ -21,10 +21,201 @@
 
 % 	Interpolation chebishev
 
-% 	Projections Amesfoort
-
 % Classification
 
 % 	LVQ
 %	LGMLVQ
 %	Linear regression
+\section{Feature Extraction}
+
+% queries -> measurements
+
+% what features, 
+
+% ground features, pipe features, how you did this with taking the bins.
+% what are the bins of the features
+
+% Projection of the areas and the pipes
+
+% length of the pipes
+
+% coating of the pipes
+
+% average construction year of the pipes
+
+
+\section{Preprocessing}
+
+\section{Outlier removal}
+
+% outlier removal 2*sd
+
+\section{Chebishev}
+
+% chebishev
+
+
+
+
+\section{Classification}
+
+\subsection{Learning Vector Quantization}
+
+Learning vector quantization (LVQ) was introduced in the '90s by Kohonen \cite{kohonen} as a precursor to Self Organizing Maps (SOM). It is a prototype-based supervised classification algorithm. It uses a winner takes it all supervised Hebbian learning based approach. LVQ is defined by its prototypes often denoted as $W = (w_i , ... w_n)$. These prototypes are defined in the feature space of the dataset. Each epoch the algorithm iterates over the dataset and for each data-point it determines the closest prototype. The prototypes have labels from the same classes as the data-points. If the label of the prototype is the same as the label of the data-point, the prototype is updated by moving it in the direction of the data-point. If the labels differ, the prototype is moved away from the data-point. The distance a prototype travels is influenced by its location and a predetermined learning rate. The original heuristic has seen many variations since it was invented. The following sections go through the variations we used for classification on the datasets in this paper.
+
+\subsection{Generalized Learning Vector Quantization}
+\label{sssec:method:glvq}
+
+The LVQ heuristic by Kohonen \cite{LVQ} needed proof of convergence, this was done by Sato and Yamada with Generalized Learning Vector Quantization (GLVQ) \cite{GLVQ}. They introduced an energy function $S$ based on the LVQ 2.1 scheme. Here there are two winning prototypes, one closest to the data-point with the same label as the data-point (denoted as $\vec{w}_J$) and the closest data-point with a different label, denoted by $\vec{w}_K$. Here $\vec{w}_J$ is moved towards the data-point and $\vec{w}_K$ is moved away from the data-point. They show that by optimizing the energy function through the prototypes this generalized version of LVQ always converges. The energy function is defined as 
+
+\begin{flalign}
+\label{eq:glvq-energy}
+E = \sum_{i=1}^{P} \Phi(\mu(\vec{x}_i))\text{ , with }\mu(\vec{x}) = \frac{d_J-d_K}{d_J+d_K} \text{.}
+\end{flalign}
+
+The function, $\Phi(\mu)$, is monotonically increasing and $d_J$ and $d_K$ the squared distances from a data-point to the winning prototypes, defined by
+
+\begin{flalign}
+\label{eq:glvq-distance}
+d_i = (\vec{x} - \vec{w}_i)^\top(\vec{x} - \vec{w}_i) \text{ , with } i=J,K \text{,}
+\end{flalign}
+
+\noindent with $\vec{x}$ the data-point and $\vec{w}_i$ one of the winning prototypes. The general update rule for the prototypes are defined by
+
+\begin{flalign}
+\label{eq:glvq-update-wi}
+\Delta\vec{w}_i = - \alpha \frac{\partial E}{\partial \vec{w}_i} \text{ , with } i=J,K \text{,}
+\end{flalign}
+
+\noindent with $\alpha$ as the learning rate. Then based on equation \ref{eq:glvq-update-wi} the update rules for the prototypes are derived to be
+
+\begin{flalign}
+\label{eq:glvq-w1}
+\Delta \vec{w}_J = \alpha \Phi'(\mu(\vec{x})) \frac{d_K}{(d_J+d_K)^2}(\vec{x}-\vec{w}_J) \text{,}
+\end{flalign}
+
+\begin{flalign}
+\label{eq:glvq-w2}
+\Delta \vec{w}_K = - \alpha \Phi'(\mu(\vec{x})) \frac{d_J}{(d_J+d_K)^2}(\vec{x}-\vec{w}_K) \text{.}
+\end{flalign}
+
+In equations \ref{eq:glvq-w1} and \ref{eq:glvq-w2} we can see prototype $\vec{w}_J$ is updated towards the data-point and prototype $\vec{w}_K$ is updated away from the data-point minimizing the energy function. The following LVQ methods (RGLVQ, GMLVQ, and LGMLVQ) are all based on this generalized variant of the LVQ 2.1 algorithm. In the experiments we only used these generalized versions of the LVQ algorithm. 
+
+Because GLVQ uses a gradient descent (a stochastic gradient decent was used) to find an optimal location for its prototypes we used a fixed maximum iterations set to $2500$ for all variants of the algorithm. Furthermore the learning rate used was quadratically declining spread out over the number of iterations.
+
+\subsubsection{Generalized Matrix Learning Vector Quantization}
+%CITE GMLVQ
+Generalized Matrix Learning Vector Quantization (GMLVQ) as proposed by Schneider et al. \cite{GMLVQ} uses a matrix $\Lambda$ instead of a vector (as in RGLVQ) to map the relevances and the combinations of the relevances between features. In order to gain a meaningful distance measure, $\Lambda$ has to be semi positive definite. This can be obtained by searching for the matrix $\Omega$ such that $\Lambda = \Omega^\top\Omega$. The method described here is based on the work by Schneider in her Ph.D. thesis \cite{Schneider}. The energy function for GMLVQ is written as
+
+\begin{flalign}
+E = \sum^P_{i=1}\Phi(\mu^\Lambda(\vec{x}_i)) \text{ , with } \mu^\Lambda(\vec{x}) = \frac{d^\Lambda_J-d^\Lambda_K}{d^\Lambda_J+d^\Lambda_K} \text{.}
+\end{flalign}
+
+Here the distance is influenced by the relevance matrix $\Lambda$ and defined as
+
+\begin{flalign}
+\label{eq:GMLVQ-distance}
+d^\Lambda_i = (\vec{x} - \vec{w_i})^\top \Lambda (\vec{x} - \vec{w_i}) \text{, with } i=J,K \text{.}
+\end{flalign}
+
+Based on the energy function and this distance measure the new update rules are derived to
+
+\begin{flalign}
+\label{eq:GMLVQ-same-prototype}
+\Delta \vec{w}_J = \alpha_1 \, \Phi' (\mu^\Lambda(\vec{x}))\, \mu^\Lambda_J(\vec{x})\, \Lambda \, (\vec{x} - \vec{w}_J) \text{,}
+\end{flalign}
+
+\begin{flalign}
+\label{eq:GMLVQ-diff-prototype}
+\Delta \vec{w}_K = - \alpha_1 \, \Phi' (\mu^\Lambda(\vec{x}))\, \mu^\Lambda_K(\vec{x})\, \Lambda \, (\vec{x} - \vec{w}_K) \text{.}
+\end{flalign}
+
+In these update rules $\alpha_1$ is the learning rate for the prototypes, $\mu^\Lambda_J(\vec{x})$ and $\mu^\Lambda_K(\vec{x})$ are defined as
+
+\begin{flalign}
+\mu^\Lambda_J(\vec{x}) = \frac{4d^\Lambda_K}{(d^\Lambda_J + d^\Lambda_K)^2} \text{,}
+\end{flalign}
+
+\begin{flalign}
+\mu^\Lambda_K(\vec{x}) = \frac{4d^\Lambda_J}{(d^\Lambda_J + d^\Lambda_K)^2} \text{.}
+\end{flalign}
+
+ From the update rules in equations \ref{eq:GMLVQ-same-prototype} and \ref{eq:GMLVQ-diff-prototype}, the update rule for the matrix $\Omega$ is derived to
+\begin{flalign}
+\label{eq:GMLVQ-matrix-update}
+\begin{split}
+\Delta \Omega_{lm} =& - \alpha_2 \Phi' (\mu^\Lambda(\vec{x}))\\
+&\Bigg(\mu^\Lambda_J(\vec{x}) \Big((x_m - w_{J,m})[\Omega(\vec{x}-\vec{w}_J)]_l\Big)\\
+&-\mu^\Lambda_K(\vec{x}) \Big((x_m - w_{K,m})[\Omega(\vec{x}-\vec{w}_K)]_l\Big)\Bigg) \text{,}
+\end{split}
+\end{flalign}
+
+where $\alpha_2$ is an independent learning rate from the learning rate $\alpha_1$ used in the update rules for the prototypes. After each update $\Lambda$ needs to be normalized (as with $\lambda$ in RGLVQ) to prevent GMLVQ from degeneration and this can be done by dividing all elements of $\Lambda$ by  $\sum_m\Lambda_{mm}$ and thus enforcing $\sum_m\Lambda_{mm} = 1$. This is a generalization for a simple diagonal metric of the normalization in GRLVQ where $\sum_m\lambda_{m} = 1$ was enforced.
+
+\subsection{Localized Generalized Matrix Learning Vector Quantization}
+%ref idk
+
+The Localized GMLVQ (LGMLVQ) works with a more complex model using local matrices either attached to each prototype or in a class-wise manner. The update rules for the closest prototypes with the same and different labels are shown in equations \ref{eq:LGMLVQ-matrix-update-same} and \ref{eq:LGMLVQ-matrix-update-diff}.
+
+\begin{flalign}
+\label{eq:LGMLVQ-matrix-update-same}
+\begin{split}
+\Delta \Omega_{J,lm} =& - \alpha_2 \Phi' (\mu^\Lambda(\vec{x}))\\
+&\mu^\Lambda_J(\vec{x}) \Big{(}(x_m - w_{J,m})[\Omega_J(\vec{x}-\vec{w}_J)]_l\Big{)} \text{,}
+\end{split}
+\end{flalign}
+
+\begin{flalign}
+\label{eq:LGMLVQ-matrix-update-diff}
+\begin{split}
+\Delta \Omega_{K,lm} =& + \alpha_2 \Phi' (\mu^\Lambda(\vec{x}))\\
+&\mu^\Lambda_K(\vec{x}) \Big{(}(x_m - w_{K,m})[\Omega_K(\vec{x}-\vec{w}_K)]_l\Big{)} \text{.}
+\end{split}
+\end{flalign}
+
+% short term long term predictions
+
+% Linear regression
+
+\section{Linear Regression}
+
+\begin{flalign}
+\label{eq:lin-reg}
+y = \alpha + \beta
+\end{flalign}
+
+\begin{flalign}
+\label{eq:lin-reg}
+x = \bar y + \hat \beta \bar x
+\end{flalign}
+
+\begin{flalign}
+\label{eq:lin-reg}
+\bar y = \frac{1}{n} \sum_{i=1}^{n} y_i
+\end{flalign}
+
+\begin{flalign}
+\label{eq:lin-reg}
+\bar x = \frac{1}{n} \sum_{i=1}^{n} x_i
+\end{flalign}
+
+\begin{flalign}
+\label{eq:lin-reg}
+\begin{split}
+\hat \beta &= \frac{\sum_{i=1}^{n} (x_i-\bar x)(y_i - \bar y)}{\sum_{i=1}^{n} (x_i-\bar x)^2}\\
+&= \frac{\text{cov}(x,y)}{\text{var}(x)}
+\end{split}
+\end{flalign}
+
+\section{R squared}
+
+\begin{flalign}
+\label{eq:lin-reg}
+R^2 = 1  - \frac{\sum_{i=1}^{n}(y_i - \bar y)^2}{\sum_{i=1}^{n}(y_i - f_i)^2}
+\end{flalign}
+
+% Cross validation
+
+% what parameters
+
+% 

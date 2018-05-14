@@ -16,29 +16,54 @@
   {}
 \endgroup
 
-\entry{knuth:1974}{article}{}
+\entry{mijnwet}{misc}{}
   \name{author}{1}{}{%
     {{}%
-     {Knuth}{K.}%
-     {Donald~E.}{D.~E.}%
+     {Government}{G.}%
+     {Dutch}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GD1}
+  \strng{fullhash}{GD1}
+  \field{sortinit}{G}
+  \field{howpublished}{Wet}
+  \field{title}{Mijnwet 1903}
+  \verb{url}
+  \verb http://wetten.overheid.nl/BWBR0001870/1999-02-17
+  \endverb
+  \field{year}{1903}
+\endentry
+
+\entry{nam-2014}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {NAM}{N.}%
+     {}{}%
      {}{}%
      {}{}}%
   }
   \list{publisher}{1}{%
-    {ACM Press}%
+    {NAM}%
   }
-  \strng{namehash}{KDE1}
-  \strng{fullhash}{KDE1}
-  \field{sortinit}{K}
-  \field{number}{12}
-  \field{pages}{667\bibrangedash 673}
-  \field{title}{{C}omputer {P}rogramming as an {A}rt}
-  \field{volume}{17}
-  \list{location}{1}{%
-    {New York, NY, USA}%
-  }
-  \field{journaltitle}{Communications of the ACM}
-  \field{year}{1974}
+  \strng{namehash}{N1}
+  \strng{fullhash}{N1}
+  \field{sortinit}{N}
+  \field{title}{Gasveld Groningen}
+  \verb{url}
+  \verb https://www.nam.nl/algemeen/mediatheek-en-downloads/brochers/_jcr_conte
+  \verb nt/par/textimage.stream/1474410748285/70797b9b4c4fe21a9e1e5b22d329e7ca1
+  \verb 70dd1a2c4e7abe8abd1b696a593b779/flyer-namg50ned.pdf
+  \endverb
+  \field{journaltitle}{Gasveld Groningen}
+  \field{year}{2014}
+\endentry
+
+\entry{oprichting-nam}{misc}{}
+  \field{sortinit}{O}
+  \field{howpublished}{\url{https://www.nam.nl/over-ons/onze-historie.html}}
+  \field{note}{Accessed: 25-04-2018}
+  \field{title}{Our History}
 \endentry
 
 \lossort
